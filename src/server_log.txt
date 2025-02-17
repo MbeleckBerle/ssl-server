@@ -1,0 +1,24 @@
+DEBUG: 2025-02-17 03:52:30, Query: 'wow', IP: ('127.0.0.1', 50082), Time: 14.418ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 03:59:10, Query: '<MagicMock name='mock.recv().rstrip().decode().strip()' id='139965028254928'>', IP: 127.0.0.1, Time: 0.182ms, Result: ERROR: FILE NOT FOUND
+DEBUG: 2025-02-17 03:59:10, Query: '<MagicMock name='mock.recv().rstrip().decode().strip()' id='139965028254928'>', IP: 127.0.0.1, Time: 0.037ms, Result: ERROR: FILE NOT FOUND
+DEBUG: 2025-02-17 04:27:12, Query: 'row', IP: ('127.0.0.1', 33796), Time: 11.941ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 04:27:14, Query: 'ad', IP: ('127.0.0.1', 33796), Time: 9.739ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 04:27:20, Query: '13;0;1;26;0;7;3;0;', IP: ('127.0.0.1', 33796), Time: 0.058ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 04:27:23, Query: '13;0;1;26;0;7;3;0;', IP: ('127.0.0.1', 33796), Time: 0.092ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 04:29:17, Query: '13;0;1;26;0;7;3;0;', IP: ('127.0.0.1', 57946), Time: 0.07ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 04:29:19, Query: 'asf', IP: ('127.0.0.1', 57946), Time: 9.81ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 04:31:51, Query: 'ad', IP: ('127.0.0.1', 59596), Time: 10.793ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 04:31:57, Query: 'sadf', IP: ('127.0.0.1', 59596), Time: 10.973ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 04:32:01, Query: '13;0;1;26;0;7;3;0;', IP: ('127.0.0.1', 59596), Time: 0.057ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 04:39:52, Query: '13;0;1;26;0;7;3;0;', IP: ('127.0.0.1', 58968), Time: 0.069ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 04:55:05, Query: '<MagicMock name='mock.recv().rstrip().decode().strip()' id='139676762621232'>', IP: 127.0.0.1, Time: 0.157ms, Result: ERROR: FILE NOT FOUND
+DEBUG: 2025-02-17 04:58:28, Query: 'sd', IP: ('127.0.0.1', 46438), Time: 12.071ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 04:58:42, Query: '2;0;6;26;0;24;5;0;', IP: ('127.0.0.1', 46438), Time: 0.066ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 05:44:59, Query: 'hi', IP: 127.0.0.1:54906, Time: 16.526ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 05:45:15, Query: '10;0;1;26;0;9;3;0;', IP: 127.0.0.1:54906, Time: 0.016ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 05:45:20, Query: '10;0;1;26;0;9;3;0;', IP: 127.0.0.1:54906, Time: 0.017ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 06:30:04, Query: 'asdf', IP: 127.0.0.1:39014, Time: 19.039ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 06:30:07, Query: 'asdf', IP: 127.0.0.1:39014, Time: 10.698ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 06:30:10, Query: '9;0;6;21;0;23;3;0;', IP: 127.0.0.1:39014, Time: 0.023ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 06:30:11, Query: '9;0;6;21;0;23;3;0;', IP: 127.0.0.1:39014, Time: 0.026ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 06:30:12, Query: '9;0;6;21;0;23;3;0;', IP: 127.0.0.1:39014, Time: 0.025ms, Result: STRING EXISTS
