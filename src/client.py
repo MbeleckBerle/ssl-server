@@ -144,5 +144,5 @@ def run_client(server_host: str, server_port: int) -> None:
 if __name__ == "__main__":
     # Connect to localhost at the default port.
     HOST: str = "127.0.0.1"
-    PORT: int = 44445
+    PORT: int = 44446
     run_client(HOST, PORT)

@@ -154,6 +154,11 @@
 
 
 
+
+
+
+
+
 #!/usr/bin/env python3
 """
 Server module for the secure search service.
@@ -178,7 +183,7 @@ from typing import Optional, Tuple
 
 # Global configuration variables (populated by load_config)
 HOST: str = "0.0.0.0"
-PORT: int = 44445
+PORT: int = 44446
 FILE_PATH: Optional[str] = None
 REREAD_ON_QUERY: bool = False
 SSL_ENABLED: bool = False
@@ -373,3 +378,191 @@ if __name__ == "__main__":
     start_server()
 
 
+
+
+
+
+
+
+
+
+
+
+
+# #!/usr/bin/env python3
+# """
+# Secure TCP Search Server
+
+# This module implements a multithreaded TCP server that:
+#   - Loads configuration from a file.
+#   - Searches for a query string in a file.
+#   - Logs search queries.
+#   - Optionally uses SSL for secure client communication.
+
+# Key Features:
+#   - PEP8 and PEP20 compliant.
+#   - Uses static typing for better maintainability.
+#   - Includes detailed docstrings and inline comments for readability.
+# """
+
+# import socket
+# import threading
+# import configparser
+# import time
+# import os
+# import ssl
+# from datetime import datetime
+# from typing import Optional, Tuple
+
+# # Global configuration variables (populated by load_config)
+# HOST: str = "0.0.0.0"
+# PORT: int = 44445
+# FILE_PATH: Optional[str] = None
+# REREAD_ON_QUERY: bool = False
+# SSL_ENABLED: bool = False
+# CERTFILE: Optional[str] = None
+# KEYFILE: Optional[str] = None
+
+# def load_config(config_path: str = "config.ini") -> Tuple[Optional[str], bool, bool, Optional[str], Optional[str]]:
+#     """
+#     Load server configuration from a config file.
+    
+#     Expected keys in the config file:
+#       - linuxpath: Path to the file to search.
+#       - REREAD_ON_QUERY: Whether to reread the file on every query.
+#       - SSL_ENABLED: Whether SSL is enabled for secure connections.
+#       - CERTFILE: Path to the SSL certificate (if SSL is enabled).
+#       - KEYFILE: Path to the SSL key (if SSL is enabled).
+    
+#     :param config_path: Path to the configuration file.
+#     :return: Tuple (file_path, reread_on_query, ssl_enabled, certfile, keyfile)
+#     """
+#     if not os.path.exists(config_path):
+#         print(f"ERROR: Configuration file '{config_path}' not found.")
+#         return None, False, False, None, None
+
+#     config = configparser.ConfigParser()
+#     config.read(config_path)
+
+#     try:
+#         file_path = config["DEFAULT"]["linuxpath"]
+#         reread_on_query = config["DEFAULT"].get("REREAD_ON_QUERY", "False").strip().lower() == "true"
+#         ssl_enabled = config["DEFAULT"].get("SSL_ENABLED", "False").strip().lower() == "true"
+#         certfile = config["DEFAULT"].get("CERTFILE", "")
+#         keyfile = config["DEFAULT"].get("KEYFILE", "")
+
+#         if not os.path.exists(file_path):
+#             print(f"ERROR: File '{file_path}' does not exist.")
+#             return None, False, False, None, None
+
+#         if ssl_enabled and (not os.path.exists(certfile) or not os.path.exists(keyfile)):
+#             print("ERROR: SSL enabled but missing certificate or key file.")
+#             return None, False, False, None, None
+
+#         return file_path, reread_on_query, ssl_enabled, certfile, keyfile
+    
+#     except KeyError as e:
+#         print(f"ERROR: Missing key {e} in config file.")
+#         return None, False, False, None, None
+
+# def search_string_in_file(file_path: str, query: str, reread_on_query: bool) -> str:
+#     """
+#     Searches for an exact match of a query string in a file.
+
+#     :param file_path: Path to the file.
+#     :param query: Query string to search for.
+#     :param reread_on_query: Whether to reread the file for each query.
+#     :return: "STRING EXISTS" if found, "STRING NOT FOUND" otherwise, or an error message.
+    
+#     Example::
+#         search_string_in_file("data.txt", "hello", True)  # "STRING EXISTS" or "STRING NOT FOUND"
+#     """
+#     if not query.strip():
+#         return "ERROR: EMPTY QUERY"
+    
+#     if not os.path.exists(file_path):
+#         return "ERROR: FILE NOT FOUND"
+    
+#     try:
+#         if reread_on_query:
+#             with open(file_path, "r", encoding="utf-8") as file:
+#                 return "STRING EXISTS" if query in file.read().splitlines() else "STRING NOT FOUND"
+#         else:
+#             return search_string_in_file_cached(file_path, query)
+#     except PermissionError:
+#         return f"ERROR: Permission denied when accessing '{file_path}'."
+#     except Exception as e:
+#         return f"ERROR: {str(e)}"
+
+# def search_string_in_file_cached(file_path: str, query: str) -> str:
+#     """
+#     Caches file content for optimized searching.
+    
+#     :param file_path: Path to the file.
+#     :param query: Query string to search for.
+#     :return: "STRING EXISTS" if found, "STRING NOT FOUND" otherwise, or an error message.
+#     """
+#     if not hasattr(search_string_in_file_cached, "cached_lines"):
+#         try:
+#             with open(file_path, "r", encoding="utf-8") as file:
+#                 search_string_in_file_cached.cached_lines = file.readlines()
+#         except Exception as e:
+#             return f"ERROR: Failed to read file: {str(e)}"
+    
+#     return "STRING EXISTS" if query in map(str.strip, search_string_in_file_cached.cached_lines) else "STRING NOT FOUND"
+
+# def handle_client(conn: socket.socket, addr: Tuple[str, int]) -> None:
+#     """
+#     Handles client connections: receives queries, processes them, and sends responses.
+#     """
+#     print(f"New connection from {addr}")
+#     conn.sendall(b"Connected to the server. Send your query.\n")
+    
+#     while True:
+#         try:
+#             data = conn.recv(1024).rstrip(b'\x00').decode("utf-8").strip()
+#             if not data:
+#                 response = "ERROR: EMPTY QUERY"
+#             else:
+#                 start_time = time.time()
+#                 response = search_string_in_file(FILE_PATH, data, REREAD_ON_QUERY)
+#                 execution_time = round((time.time() - start_time) * 1000, 3)
+#                 print(f"Query from {addr}: '{data}', Time: {execution_time}ms, Result: {response}")
+            
+#             conn.sendall(f"{response}\n".encode("utf-8"))
+#         except ConnectionResetError:
+#             print(f"WARNING: Client {addr} disconnected unexpectedly.")
+#             break
+#         except Exception as e:
+#             print(f"ERROR: Unexpected error with client {addr}: {str(e)}")
+#             break
+    
+#     conn.close()
+
+# def start_server() -> None:
+#     """
+#     Initializes and starts the TCP server with optional SSL.
+#     """
+#     global FILE_PATH, REREAD_ON_QUERY, SSL_ENABLED, CERTFILE, KEYFILE
+#     FILE_PATH, REREAD_ON_QUERY, SSL_ENABLED, CERTFILE, KEYFILE = load_config()
+#     if FILE_PATH is None:
+#         print("ERROR: Invalid configuration. Server cannot start.")
+#         return
+
+#     try:
+#         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+#         server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+#         server.bind((HOST, PORT))
+#         server.listen()
+#         print(f"Server listening on {HOST}:{PORT}...")
+
+#         while True:
+#             conn, addr = server.accept()
+#             threading.Thread(target=handle_client, args=(conn, addr), daemon=True).start()
+#     except Exception as e:
+#         print(f"ERROR: {e}")
+#     finally:
+#         server.close()
+
+# if __name__ == "__main__":
+#     start_server()

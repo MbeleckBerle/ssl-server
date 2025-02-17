@@ -22,3 +22,71 @@ DEBUG: 2025-02-17 06:30:07, Query: 'asdf', IP: 127.0.0.1:39014, Time: 10.698ms, 
 DEBUG: 2025-02-17 06:30:10, Query: '9;0;6;21;0;23;3;0;', IP: 127.0.0.1:39014, Time: 0.023ms, Result: STRING EXISTS
 DEBUG: 2025-02-17 06:30:11, Query: '9;0;6;21;0;23;3;0;', IP: 127.0.0.1:39014, Time: 0.026ms, Result: STRING EXISTS
 DEBUG: 2025-02-17 06:30:12, Query: '9;0;6;21;0;23;3;0;', IP: 127.0.0.1:39014, Time: 0.025ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 09:33:03, Query: 'hi', IP: 127.0.0.1:50316, Time: 20.445ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '(as-test) mojo@Mojo:~/algo-server/src$ python -m unittest test_server.py', IP: 127.0.0.1:50316, Time: 7.427ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '..New connection from 127.0.0.1', IP: 127.0.0.1:50316, Time: 7.353ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'WARNING: Client 127.0.0.1 disconnected unexpectedly.', IP: 127.0.0.1:50316, Time: 7.573ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '.New connection from 127.0.0.1', IP: 127.0.0.1:50316, Time: 7.244ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'WARNING: Client 127.0.0.1 disconnected unexpectedly.', IP: 127.0.0.1:50316, Time: 7.473ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '.ERROR: Configured file 'non_existent_search_file.txt' does not exist. Check 'linuxpath' in /tmp/tmp6x6ki67t.', IP: 127.0.0.1:50316, Time: 7.444ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'FERROR: Configuration file 'non_existent_config_file.ini' not found. Please create it.', IP: 127.0.0.1:50316, Time: 9.757ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'FERROR: Missing key 'linuxpath' in /tmp/tmpt14bdtjy. Ensure all required keys are present.', IP: 127.0.0.1:50316, Time: 8.366ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'FFDEBUG: 2025-02-17 07:27:13, Query: 'test_query', IP: 127.0.0.1, Time: 100ms, Result: STRING EXISTS', IP: 127.0.0.1:50316, Time: 8.555ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '...........', IP: 127.0.0.1:50316, Time: 8.255ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '======================================================================', IP: 127.0.0.1:50316, Time: 7.316ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'FAIL: test_config_file_does_not_exist (test_server.TestLoadConfig)', IP: 127.0.0.1:50316, Time: 7.401ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '----------------------------------------------------------------------', IP: 127.0.0.1:50316, Time: 7.785ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'Traceback (most recent call last):', IP: 127.0.0.1:50316, Time: 7.288ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'File "/home/mojo/algo-server/src/test_server.py", line 398, in test_config_file_does_not_exist', IP: 127.0.0.1:50316, Time: 7.442ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'self.assertIsNone(reread_on_query)', IP: 127.0.0.1:50316, Time: 7.254ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'AssertionError: False is not None', IP: 127.0.0.1:50316, Time: 7.412ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '======================================================================', IP: 127.0.0.1:50316, Time: 7.15ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'FAIL: test_config_file_missing (test_server.TestLoadConfig)', IP: 127.0.0.1:50316, Time: 7.421ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '----------------------------------------------------------------------', IP: 127.0.0.1:50316, Time: 7.181ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'Traceback (most recent call last):', IP: 127.0.0.1:50316, Time: 7.436ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'File "/home/mojo/algo-server/src/test_server.py", line 343, in test_config_file_missing', IP: 127.0.0.1:50316, Time: 7.644ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'self.assertIsNone(reread_on_query)', IP: 127.0.0.1:50316, Time: 7.29ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'AssertionError: False is not None', IP: 127.0.0.1:50316, Time: 7.483ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '======================================================================', IP: 127.0.0.1:50316, Time: 7.406ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'FAIL: test_config_invalid_key (test_server.TestLoadConfig)', IP: 127.0.0.1:50316, Time: 7.122ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '----------------------------------------------------------------------', IP: 127.0.0.1:50316, Time: 7.107ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'Traceback (most recent call last):', IP: 127.0.0.1:50316, Time: 7.245ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'File "/home/mojo/algo-server/src/test_server.py", line 380, in test_config_invalid_key', IP: 127.0.0.1:50316, Time: 7.277ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'self.assertIsNone(reread_on_query)', IP: 127.0.0.1:50316, Time: 7.193ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'AssertionError: False is not None', IP: 127.0.0.1:50316, Time: 7.992ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '======================================================================', IP: 127.0.0.1:50316, Time: 7.335ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'FAIL: test_config_valid (test_server.TestLoadConfig)', IP: 127.0.0.1:50316, Time: 7.282ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '----------------------------------------------------------------------', IP: 127.0.0.1:50316, Time: 7.422ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'Traceback (most recent call last):', IP: 127.0.0.1:50316, Time: 7.514ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'File "/home/mojo/algo-server/src/test_server.py", line 366, in test_config_valid', IP: 127.0.0.1:50316, Time: 6.959ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'self.assertIsNone(certfile)', IP: 127.0.0.1:50316, Time: 7.104ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'AssertionError: '' is not None', IP: 127.0.0.1:50316, Time: 7.307ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: '----------------------------------------------------------------------', IP: 127.0.0.1:50316, Time: 7.529ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'Ran 19 tests in 0.010s', IP: 127.0.0.1:50316, Time: 6.982ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 09:33:06, Query: 'FAILED (failures=4)', IP: 127.0.0.1:50316, Time: 7.6ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:02:47, Query: 'asdf', IP: 127.0.0.1:54180, Time: 22.991ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:02:49, Query: 'asdf', IP: 127.0.0.1:54180, Time: 12.968ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:02:50, Query: 'asdf', IP: 127.0.0.1:54180, Time: 9.138ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:02:51, Query: 'sdf', IP: 127.0.0.1:54180, Time: 9.134ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:02:51, Query: 'adsf', IP: 127.0.0.1:54180, Time: 11.089ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:02:56, Query: '13;0;1;26;0;7;3;0;', IP: 127.0.0.1:54180, Time: 0.023ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 11:03:04, Query: '13;0;1;26;0;7;3;0;', IP: 127.0.0.1:54180, Time: 0.026ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 11:03:09, Query: '13;0;1;26;0;7;3;0;', IP: 127.0.0.1:54180, Time: 0.032ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 11:24:55, Query: 'asdf', IP: 127.0.0.1:36764, Time: 13.752ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:24:57, Query: 'asdf', IP: 127.0.0.1:36764, Time: 8.516ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:25:10, Query: '13;0;1;26;0;7;3;0;', IP: 127.0.0.1:36764, Time: 0.019ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 11:41:31, Query: 'asdf', IP: 127.0.0.1:60368, Time: 14.355ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:41:32, Query: 'asdf', IP: 127.0.0.1:60368, Time: 6.143ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:41:33, Query: 'asdf', IP: 127.0.0.1:60368, Time: 5.179ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 11:41:42, Query: '2;0;23;21;0;22;3;0;', IP: 127.0.0.1:60368, Time: 0.019ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 12:12:55, Query: '24;0;6;28;0;23;5;0;', IP: 127.0.0.1:36252, Time: 7.936ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 12:12:57, Query: 'asd', IP: 127.0.0.1:36252, Time: 7.447ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 12:12:58, Query: 'asdf', IP: 127.0.0.1:36252, Time: 6.68ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 12:12:58, Query: 'asdf', IP: 127.0.0.1:36252, Time: 8.452ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 12:12:59, Query: 'asdf', IP: 127.0.0.1:36252, Time: 7.972ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 12:12:59, Query: 'asdf', IP: 127.0.0.1:36252, Time: 6.725ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 12:12:59, Query: 'asdf', IP: 127.0.0.1:36252, Time: 8.289ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 12:13:00, Query: 'sadf', IP: 127.0.0.1:36252, Time: 6.112ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 12:13:01, Query: '24;0;6;28;0;23;5;0;', IP: 127.0.0.1:36252, Time: 0.024ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 12:13:04, Query: '24;0;6;28;0;23;5;0;', IP: 127.0.0.1:36252, Time: 0.015ms, Result: STRING EXISTS
+DEBUG: 2025-02-17 12:13:05, Query: '24;0;6;28;0;23;5;0;', IP: 127.0.0.1:36252, Time: 0.015ms, Result: STRING EXISTS
