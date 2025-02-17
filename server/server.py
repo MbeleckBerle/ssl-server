@@ -5,7 +5,15 @@ import time
 import os
 from datetime import datetime
 
-# Load configuration with error handling
+# Todo
+### 1. config
+### 2. search string in file
+### 3. log search
+### 4. client
+
+### 5. unit test
+
+# Load configuration 
 def load_config(config_path="config.ini"):
     """Load server configuration from file."""
     if not os.path.exists(config_path):

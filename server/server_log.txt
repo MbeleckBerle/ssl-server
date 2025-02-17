@@ -1,1 +1,3 @@
 DEBUG: 2025-02-17 03:52:30, Query: 'wow', IP: ('127.0.0.1', 50082), Time: 14.418ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-17 03:59:10, Query: '<MagicMock name='mock.recv().rstrip().decode().strip()' id='139965028254928'>', IP: 127.0.0.1, Time: 0.182ms, Result: ERROR: FILE NOT FOUND
+DEBUG: 2025-02-17 03:59:10, Query: '<MagicMock name='mock.recv().rstrip().decode().strip()' id='139965028254928'>', IP: 127.0.0.1, Time: 0.037ms, Result: ERROR: FILE NOT FOUND
