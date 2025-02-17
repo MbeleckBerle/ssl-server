@@ -1,0 +1,1 @@
+DEBUG: 2025-02-17 03:52:30, Query: 'wow', IP: ('127.0.0.1', 50082), Time: 14.418ms, Result: STRING NOT FOUND
