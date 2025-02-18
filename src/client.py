@@ -1,3 +1,6 @@
+
+
+
 #!/usr/bin/env python3
 """
 Client module for the secure search service.
@@ -6,11 +9,12 @@ This module connects to the search server and allows interactive query submissio
 SSL authentication is optional and configurable via a client configuration file.
 """
 
-import socket
-import ssl
 import configparser
 import os
+import socket
+import ssl
 from typing import Tuple
+
 
 def load_client_config(config_path: str = "client_config.ini") -> Tuple[bool, str]:
     """
@@ -28,9 +32,12 @@ def load_client_config(config_path: str = "client_config.ini") -> Tuple[bool, st
     if os.path.exists(config_path):
         config = configparser.ConfigParser()
         config.read(config_path)
-        ssl_enabled = config["DEFAULT"].get("SSL_ENABLED", "False").strip().lower() == "true"
+        ssl_enabled = (
+            config["DEFAULT"].get("SSL_ENABLED", "False").strip().lower() == "true"
+        )
         server_cert = config["DEFAULT"].get("SERVER_CERT", "")
     return ssl_enabled, server_cert
+
 
 def run_client(server_host: str, server_port: int) -> None:
     """
@@ -42,7 +49,9 @@ def run_client(server_host: str, server_port: int) -> None:
     ssl_enabled, server_cert = load_client_config()
 
     try:
-        client_socket: socket.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        client_socket: socket.socket = socket.socket(
+            socket.AF_INET, socket.SOCK_STREAM
+        )
         if ssl_enabled:
             context = ssl.create_default_context(ssl.Purpose.SERVER_AUTH)
             if server_cert and os.path.exists(server_cert):
@@ -51,7 +60,9 @@ def run_client(server_host: str, server_port: int) -> None:
                 # For self-signed certificates without a provided CA file:
                 context.check_hostname = False
                 context.verify_mode = ssl.CERT_NONE
-            client_socket = context.wrap_socket(client_socket, server_hostname=server_host)
+            client_socket = context.wrap_socket(
+                client_socket, server_hostname=server_host
+            )
             print("SSL is enabled for the client.")
 
         client_socket.connect((server_host, server_port))
@@ -87,6 +98,7 @@ def run_client(server_host: str, server_port: int) -> None:
             client_socket.close()
         except Exception:
             pass
+
 
 if __name__ == "__main__":
     # Connect to localhost at the default port.

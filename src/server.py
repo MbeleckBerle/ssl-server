@@ -1,4 +1,3 @@
-
 """
 Server module for the secure search service.
 
@@ -11,12 +10,12 @@ This module implements a TCP server that:
 The code is statically typed, PEP8 and PEP20 compliant, and fully documented.
 """
 
-import socket
-import threading
 import configparser
-import time
 import os
+import socket
 import ssl
+import threading
+import time
 from datetime import datetime
 from typing import Optional, Tuple
 
@@ -29,7 +28,10 @@ SSL_ENABLED: bool = False
 CERTFILE: Optional[str] = None
 KEYFILE: Optional[str] = None
 
-def load_config(config_path: str = "config.ini") -> Tuple[Optional[str], bool, bool, Optional[str], Optional[str]]:
+
+def load_config(config_path: str = "config.ini") -> Tuple[
+    Optional[str], bool, bool, Optional[str], Optional[str]
+]:
     """
     Load server configuration from a config file.
 
@@ -52,25 +54,38 @@ def load_config(config_path: str = "config.ini") -> Tuple[Optional[str], bool, b
 
     try:
         file_path: str = config["DEFAULT"]["linuxpath"]
-        reread_on_query: bool = config["DEFAULT"].get("REREAD_ON_QUERY", "False").strip().lower() == "true"
-        ssl_enabled: bool = config["DEFAULT"].get("SSL_ENABLED", "False").strip().lower() == "true"
+        reread_on_query: bool = (
+            config["DEFAULT"].get("REREAD_ON_QUERY", "False").strip().lower() == "true"
+        )
+        ssl_enabled: bool = (
+            config["DEFAULT"].get("SSL_ENABLED", "False").strip().lower() == "true"
+        )
         certfile: str = config["DEFAULT"].get("CERTFILE", "")
         keyfile: str = config["DEFAULT"].get("KEYFILE", "")
 
         if not os.path.exists(file_path):
-            print(f"ERROR: Configured file '{file_path}' does not exist. Check 'linuxpath' in {config_path}.")
+            print(
+                f"ERROR: Configured file '{file_path}' does not exist. "
+                f"Check 'linuxpath' in {config_path}."
+            )
             return None, False, False, None, None
 
         if ssl_enabled:
             if not os.path.exists(certfile) or not os.path.exists(keyfile):
-                print(f"ERROR: SSL is enabled but certificate '{certfile}' or key '{keyfile}' does not exist.")
+                print(
+                    f"ERROR: SSL is enabled but certificate '{certfile}' or key "
+                    f"'{keyfile}' does not exist."
+                )
                 return None, False, False, None, None
 
         return file_path, reread_on_query, ssl_enabled, certfile, keyfile
 
     except KeyError as e:
-        print(f"ERROR: Missing key {e} in {config_path}. Ensure all required keys are present.")
+        print(
+            f"ERROR: Missing key {e} in {config_path}. Ensure all required keys are present."
+        )
         return None, False, False, None, None
+
 
 def search_string_in_file(file_path: str, query: str, reread_on_query: bool) -> str:
     """
@@ -101,6 +116,7 @@ def search_string_in_file(file_path: str, query: str, reread_on_query: bool) -> 
     except Exception as e:
         return f"ERROR: {str(e)}"
 
+
 def search_string_in_file_cached(file_path: str, query: str) -> str:
     """
     Caches the file content for optimized searching.
@@ -121,6 +137,7 @@ def search_string_in_file_cached(file_path: str, query: str) -> str:
             return "STRING EXISTS"
     return "STRING NOT FOUND"
 
+
 def log_search(query: str, addr: str, execution_time: float, response: str) -> None:
     """
     Logs search queries into a server log file.
@@ -131,13 +148,17 @@ def log_search(query: str, addr: str, execution_time: float, response: str) -> N
     :param response: The result of the search.
     """
     timestamp: str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    log_entry: str = f"DEBUG: {timestamp}, Query: '{query}', IP: {addr}, Time: {execution_time}ms, Result: {response}\n"
+    log_entry: str = (
+        f"DEBUG: {timestamp}, Query: '{query}', IP: {addr}, "
+        f"Time: {execution_time}ms, Result: {response}\n"
+    )
     print(log_entry.strip())  # Also log to console
     try:
         with open("server_log.txt", "a") as log_file:
             log_file.write(log_entry)
     except Exception as e:
         print(f"ERROR: Failed to write to log file: {str(e)}")
+
 
 def handle_client(conn: socket.socket, addr: Tuple[str, int]) -> None:
     """
@@ -151,7 +172,12 @@ def handle_client(conn: socket.socket, addr: Tuple[str, int]) -> None:
 
     while True:
         try:
-            data: str = conn.recv(1024).rstrip(b'\x00').decode("utf-8").strip()
+            data: str = (
+                conn.recv(1024)
+                .rstrip(b"\x00")
+                .decode("utf-8")
+                .strip()
+            )
             if data == "":
                 response: str = "ERROR: EMPTY QUERY"
             else:
@@ -169,6 +195,7 @@ def handle_client(conn: socket.socket, addr: Tuple[str, int]) -> None:
             break
 
     conn.close()
+
 
 def start_server() -> None:
     """
@@ -204,7 +231,9 @@ def start_server() -> None:
                     conn.close()
                     continue
 
-            threading.Thread(target=handle_client, args=(conn, addr), daemon=True).start()
+            threading.Thread(
+                target=handle_client, args=(conn, addr), daemon=True
+            ).start()
 
     except OSError as e:
         print(f"ERROR: Failed to start server. Possible cause: {e}")
@@ -212,6 +241,7 @@ def start_server() -> None:
         print("\nServer shutting down gracefully...")
     finally:
         server.close()
+
 
 if __name__ == "__main__":
     start_server()
