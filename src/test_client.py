@@ -61,7 +61,7 @@ def test_run_client(mock_socket_and_ssl: Tuple[MagicMock, MagicMock]) -> None:
     # Mock the behavior of the input and print functions
     with patch('builtins.input', side_effect=['test query', 'exit']), patch("builtins.print") as mock_print:
         # Run the client
-        run_client("127.0.0.1", 44446)
+        run_client("127.0.0.1", 44445)
         
         # Get printed lines from the mock
         printed = get_printed_lines(mock_print)
@@ -72,13 +72,13 @@ def test_run_client(mock_socket_and_ssl: Tuple[MagicMock, MagicMock]) -> None:
             print(line)
 
         # Assertions for expected print outputs
-        assert any("connected to server at 127.0.0.1:44446" in line.lower() for line in printed)
+        assert any("connected to server at 127.0.0.1:44445" in line.lower() for line in printed)
         assert any("server:" in line.lower() and "welcome to secure search service" in line.lower() for line in printed)
         assert any("response:" in line.lower() and "server response" in line.lower() for line in printed)
         assert any("exiting client" in line.lower() for line in printed)
 
         # Ensure the socket was connected to the expected address
-        fake_socket.connect.assert_called_with(("127.0.0.1", 44446))
+        fake_socket.connect.assert_called_with(("127.0.0.1", 44445))
         
         # Ensure the query was sent
         fake_socket.sendall.assert_called_with(b"test query")
@@ -116,7 +116,7 @@ def test_benchmark_execution_times() -> None:
 
     for size in file_sizes:
         start_time = time.time()
-        run_client("127.0.0.1", 44446)  # Adjust this for actual file handling.
+        run_client("127.0.0.1", 44445)  # Adjust this for actual file handling.
         elapsed_time = time.time() - start_time
         times[size] = elapsed_time
         print(f"File size: {size}, Time taken: {elapsed_time:.4f} seconds")

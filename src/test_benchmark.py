@@ -14,7 +14,7 @@ class BenchmarkTest(unittest.TestCase):
         for size in file_sizes:
             # Simulate the file size by adjusting the query or file content
             start_time = time.time()
-            run_client("127.0.0.1", 44446)  # Run the client (adjust for actual file handling)
+            run_client("127.0.0.1", 44445)  # Run the client (adjust for actual file handling)
             elapsed_time = time.time() - start_time
             times[size] = elapsed_time
             print(f"File size: {size}, Time taken: {elapsed_time:.4f} seconds")

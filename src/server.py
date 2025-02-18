@@ -22,7 +22,7 @@ from typing import Optional, Tuple
 
 # Global configuration variables (populated by load_config)
 HOST: str = "0.0.0.0"
-PORT: int = 44446
+PORT: int = 44445
 FILE_PATH: Optional[str] = None
 REREAD_ON_QUERY: bool = False
 SSL_ENABLED: bool = False
