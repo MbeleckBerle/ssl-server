@@ -1,5 +1,0 @@
-2025-02-17 16:42:02.778357 - Client: 127.0.0.1:35282 - Query: 'asd' - Time: 24.789ms - Result: STRING NOT FOUND
-2025-02-17 16:42:03.752984 - Client: 127.0.0.1:35282 - Query: 'adsf' - Time: 13.207ms - Result: STRING NOT FOUND
-2025-02-17 16:42:13.275830 - Client: 127.0.0.1:35282 - Query: '21;0;6;28;0;23;3;0;' - Time: 0.03ms - Result: STRING EXISTS
-2025-02-17 16:42:14.473486 - Client: 127.0.0.1:35282 - Query: '21;0;6;28;0;23;3;0;' - Time: 0.043ms - Result: STRING EXISTS
-2025-02-17 16:42:16.922928 - Client: 127.0.0.1:35282 - Query: '21;0;6;28;0;23;3;0;' - Time: 0.031ms - Result: STRING EXISTS

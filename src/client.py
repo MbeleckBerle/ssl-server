@@ -1,6 +1,3 @@
-
-
-
 #!/usr/bin/env python3
 """
 Client module for the secure search service.
@@ -13,10 +10,11 @@ import configparser
 import os
 import socket
 import ssl
+import argparse
 from typing import Tuple
 
 
-def load_client_config(config_path: str = "client_config.ini") -> Tuple[bool, str]:
+def load_client_config(config_path: str) -> Tuple[bool, str]:
     """
     Load client configuration from a file.
 
@@ -36,17 +34,35 @@ def load_client_config(config_path: str = "client_config.ini") -> Tuple[bool, st
             config["DEFAULT"].get("SSL_ENABLED", "False").strip().lower() == "true"
         )
         server_cert = config["DEFAULT"].get("SERVER_CERT", "")
+    else:
+        print(f"Configuration file {config_path} does not exist.")
     return ssl_enabled, server_cert
 
 
-def run_client(server_host: str, server_port: int) -> None:
+def parse_arguments():
+    """
+    Parse command-line arguments.
+
+    :return: Parsed arguments.
+    """
+    parser = argparse.ArgumentParser(description="Client for the secure search service.")
+    parser.add_argument("--config", type=str, default=os.getenv("CLIENT_CONFIG_PATH", "client_config.ini"), 
+                        help="Path to the client configuration file.")
+    parser.add_argument("--host", type=str, default=os.getenv("SERVER_HOST", "127.0.0.1"), 
+                        help="Server host.")
+    parser.add_argument("--port", type=int, default=int(os.getenv("SERVER_PORT", 44446)),
+                        help="Server port.")
+    return parser.parse_args()
+
+
+def run_client(server_host: str, server_port: int, config_path: str) -> None:
     """
     Connects to the server, sends queries, and prints responses.
 
     :param server_host: The server hostname or IP address.
     :param server_port: The server port.
     """
-    ssl_enabled, server_cert = load_client_config()
+    ssl_enabled, server_cert = load_client_config(config_path)
 
     try:
         client_socket: socket.socket = socket.socket(
@@ -101,7 +117,5 @@ def run_client(server_host: str, server_port: int) -> None:
 
 
 if __name__ == "__main__":
-    # Connect to localhost at the default port.
-    HOST: str = "127.0.0.1"
-    PORT: int = 44446
-    run_client(HOST, PORT)
+    args = parse_arguments()
+    run_client(args.host, args.port, args.config)

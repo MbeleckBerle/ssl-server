@@ -2,7 +2,6 @@
 
 This project implements a secure search service where a client can send queries to a server, and the server responds with the search results from a file. The server supports SSL encryption for secure communication, and both server and client configurations can be customized using respective configuration files.
 
-## Requirements
 
 ### Prerequisites
 
@@ -22,7 +21,25 @@ You can install the necessary dependencies by running:
 
 pip install -r requirements.txt
 
+## on linux Run 
+sudo apt-get install openssl
 
+## On macOS run
+brew install openssl
+
+
+## Generate the SSL Certificate and Key Files
+You can generate the self-signed SSL certificate (cert.pem) and the private key (key.pem) using the following OpenSSL command:
+
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem
+
+## Update Your Configuration
+[DEFAULT]
+linuxpath = /path/to/your/file.txt
+REREAD_ON_QUERY = True
+SSL_ENABLED = True
+CERTFILE = /path/to/cert.pem
+KEYFILE = /path/to/key.pem
 
 
 Ensure you have the cert.pem and key.pem files in the same folder ready for SSL encryption.
