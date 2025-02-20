@@ -1,0 +1,234 @@
+DEBUG: 2025-02-19 22:41:19, Query: 'ser', IP: 127.0.0.1:37554, Execution Time: 20.003ms, Result: STRING NOT FOUND
+DEBUG: 2025-02-19 22:41:30, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:37554, Execution Time: 0.024ms, Result: STRING EXISTS
+DEBUG: 2025-02-19 22:42:58, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:54642, Execution Time: 24.258ms, Result: STRING EXISTS
+DEBUG: 2025-02-19 22:42:59, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:54642, Execution Time: 0.02ms, Result: STRING EXISTS
+DEBUG: 2025-02-19 22:43:00, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:54642, Execution Time: 0.019ms, Result: STRING EXISTS
+2025-02-19 22:51:08, Query: '[REDACTED]', IP: 127.0.0.1:34442, Execution Time: 23.556ms, Result: STRING NOT FOUND
+2025-02-19 22:51:32, Query: '[REDACTED]', IP: 127.0.0.1:34556, Execution Time: 0.026ms, Result: STRING EXISTS
+2025-02-19 22:51:48, Query: '[REDACTED]', IP: 127.0.0.1:50268, Execution Time: 0.019ms, Result: STRING NOT FOUND
+2025-02-19 22:54:10, Query: 'asdf', IP: 127.0.0.1:53498, Execution Time: 24.86ms, Result: STRING NOT FOUND
+2025-02-19 22:54:15, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.015ms, Result: STRING EXISTS
+2025-02-19 22:54:16, Query: 'asdf', IP: 127.0.0.1:53498, Execution Time: 0.015ms, Result: STRING NOT FOUND
+2025-02-19 22:54:17, Query: 'asdf', IP: 127.0.0.1:53498, Execution Time: 0.018ms, Result: STRING NOT FOUND
+2025-02-19 22:54:18, Query: 'asdf', IP: 127.0.0.1:53498, Execution Time: 0.017ms, Result: STRING NOT FOUND
+2025-02-19 22:54:21, Query: 'asd', IP: 127.0.0.1:53498, Execution Time: 0.018ms, Result: STRING NOT FOUND
+2025-02-19 22:54:26, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.018ms, Result: STRING EXISTS
+2025-02-19 22:54:31, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.021ms, Result: STRING EXISTS
+2025-02-19 22:54:32, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.015ms, Result: STRING EXISTS
+2025-02-19 22:54:35, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.02ms, Result: STRING EXISTS
+2025-02-19 22:54:35, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.021ms, Result: STRING EXISTS
+2025-02-19 22:54:38, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.02ms, Result: STRING EXISTS
+2025-02-19 22:54:43, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.02ms, Result: STRING EXISTS
+2025-02-19 22:54:44, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.017ms, Result: STRING EXISTS
+2025-02-19 22:54:46, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.024ms, Result: STRING EXISTS
+2025-02-19 22:54:47, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.019ms, Result: STRING EXISTS
+2025-02-19 22:54:49, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.016ms, Result: STRING EXISTS
+2025-02-19 22:56:39, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 22.329ms, Result: STRING NOT FOUND
+2025-02-19 22:56:40, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 0.014ms, Result: STRING NOT FOUND
+2025-02-19 22:56:42, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 0.016ms, Result: STRING NOT FOUND
+2025-02-19 22:56:42, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 0.015ms, Result: STRING NOT FOUND
+2025-02-19 22:56:43, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 0.015ms, Result: STRING NOT FOUND
+2025-02-19 22:56:52, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:36222, Execution Time: 0.014ms, Result: STRING EXISTS
+2025-02-19 22:57:12, Query: '20;0;23;16;0;18;3;0;', IP: 127.0.0.1:36222, Execution Time: 0.015ms, Result: STRING EXISTS
+2025-02-19 22:57:14, Query: '20;0;23;16;0;18;3;0;', IP: 127.0.0.1:36222, Execution Time: 0.015ms, Result: STRING EXISTS
+2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.533ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.061ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.277ms, Result: STRING NOT FOUND
+2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.08ms, Result: STRING NOT FOUND
+2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.087ms, Result: STRING NOT FOUND
+2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.355ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.06ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.4ms, Result: STRING NOT FOUND
+2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.118ms, Result: STRING NOT FOUND
+2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.068ms, Result: STRING NOT FOUND
+2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.388ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.056ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.05ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.041ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.046ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.593ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.047ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.039ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.037ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.051ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.378ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.046ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.268ms, Result: STRING NOT FOUND
+2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.067ms, Result: STRING NOT FOUND
+2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.053ms, Result: STRING NOT FOUND
+2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.376ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.055ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.056ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.498ms, Result: STRING NOT FOUND
+2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.058ms, Result: STRING NOT FOUND
+2025-02-19 23:07:21, Query: 'asdf', IP: 127.0.0.1:50234, Execution Time: 22.013ms, Result: STRING NOT FOUND
+2025-02-19 23:07:22, Query: 'asdf', IP: 127.0.0.1:50234, Execution Time: 0.02ms, Result: STRING NOT FOUND
+2025-02-19 23:07:23, Query: 'asdf', IP: 127.0.0.1:50234, Execution Time: 0.021ms, Result: STRING NOT FOUND
+2025-02-19 23:07:27, Query: 'adf', IP: 127.0.0.1:50234, Execution Time: 0.019ms, Result: STRING NOT FOUND
+2025-02-19 23:07:30, Query: 'adsf', IP: 127.0.0.1:50234, Execution Time: 0.022ms, Result: STRING NOT FOUND
+2025-02-19 23:07:33, Query: 'asfd', IP: 127.0.0.1:50234, Execution Time: 0.02ms, Result: STRING NOT FOUND
+2025-02-19 23:07:33, Query: 'asdf', IP: 127.0.0.1:50234, Execution Time: 0.015ms, Result: STRING NOT FOUND
+2025-02-19 23:07:34, Query: 'asd', IP: 127.0.0.1:50234, Execution Time: 0.015ms, Result: STRING NOT FOUND
+2025-02-19 23:07:37, Query: 'fasd', IP: 127.0.0.1:50234, Execution Time: 0.021ms, Result: STRING NOT FOUND
+2025-02-19 23:07:45, Query: 'f4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.014ms, Result: STRING NOT FOUND
+2025-02-19 23:07:46, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.015ms, Result: STRING EXISTS
+2025-02-19 23:07:48, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.016ms, Result: STRING EXISTS
+2025-02-19 23:07:48, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.017ms, Result: STRING EXISTS
+2025-02-19 23:07:49, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.016ms, Result: STRING EXISTS
+2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.515ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.076ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.241ms, Result: STRING NOT FOUND
+2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.069ms, Result: STRING NOT FOUND
+2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.092ms, Result: STRING NOT FOUND
+2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.449ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.062ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.069ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.09ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.046ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.819ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.107ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.104ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.278ms, Result: STRING NOT FOUND
+2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.115ms, Result: STRING NOT FOUND
+2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.905ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.108ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.185ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.101ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.262ms, Result: STRING NOT FOUND
+2025-02-19 23:19:40, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 20.733ms, Result: STRING NOT FOUND
+2025-02-19 23:19:43, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 0.023ms, Result: STRING NOT FOUND
+2025-02-19 23:19:44, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 0.019ms, Result: STRING NOT FOUND
+2025-02-19 23:19:46, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 0.022ms, Result: STRING NOT FOUND
+2025-02-19 23:20:34, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 0.018ms, Result: STRING NOT FOUND
+2025-02-19 23:22:59, Query: 'asd', IP: 127.0.0.1:55934, Execution Time: 21.447ms, Result: STRING NOT FOUND
+2025-02-19 23:23:07, Query: 'asd', IP: 127.0.0.1:55934, Execution Time: 0.083ms, Result: STRING NOT FOUND
+2025-02-19 23:23:08, Query: 'sdf', IP: 127.0.0.1:55934, Execution Time: 0.016ms, Result: STRING NOT FOUND
+2025-02-19 23:23:08, Query: 'asd', IP: 127.0.0.1:55934, Execution Time: 0.018ms, Result: STRING NOT FOUND
+2025-02-19 23:23:08, Query: 'fas', IP: 127.0.0.1:55934, Execution Time: 0.021ms, Result: STRING NOT FOUND
+2025-02-19 23:23:09, Query: 'fasd', IP: 127.0.0.1:55934, Execution Time: 0.023ms, Result: STRING NOT FOUND
+2025-02-19 23:23:23, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.023ms, Result: STRING EXISTS
+2025-02-19 23:23:24, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.017ms, Result: STRING EXISTS
+2025-02-19 23:23:25, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.017ms, Result: STRING EXISTS
+2025-02-19 23:23:25, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.015ms, Result: STRING EXISTS
+2025-02-19 23:23:28, Query: 'asd', IP: 127.0.0.1:55934, Execution Time: 0.018ms, Result: STRING NOT FOUND
+2025-02-19 23:23:34, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.016ms, Result: STRING EXISTS
+2025-02-19 23:23:35, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.017ms, Result: STRING EXISTS
+2025-02-19 23:23:35, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.02ms, Result: STRING EXISTS
+2025-02-19 23:23:36, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.018ms, Result: STRING EXISTS
+2025-02-19 23:23:38, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.019ms, Result: STRING EXISTS
+2025-02-19 23:23:44, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.02ms, Result: STRING EXISTS
+2025-02-19 23:23:47, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.02ms, Result: STRING EXISTS
+2025-02-19 23:23:48, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.019ms, Result: STRING EXISTS
+2025-02-19 23:23:49, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.018ms, Result: STRING EXISTS
+2025-02-19 23:23:51, Query: 'clear', IP: 127.0.0.1:55934, Execution Time: 0.021ms, Result: STRING NOT FOUND
+2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.859ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.45ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.108ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.15ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.352ms, Result: STRING NOT FOUND
+2025-02-19 23:27:49, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140614239622752'>', IP: 127.0.0.1:12345, Execution Time: 0.987ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:27:49, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140614239622752'>', IP: 127.0.0.1:12345, Execution Time: 0.122ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:27:49, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140614239622752'>', IP: 127.0.0.1:12345, Execution Time: 0.108ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:28:03, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140222737781936'>', IP: 127.0.0.1:12345, Execution Time: 0.924ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:28:03, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140222737781936'>', IP: 127.0.0.1:12345, Execution Time: 0.422ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:28:03, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140222737781936'>', IP: 127.0.0.1:12345, Execution Time: 0.316ms, Result: STRING NOT FOUND
+2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 1.133ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 0.16ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 0.323ms, Result: STRING NOT FOUND
+2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 0.137ms, Result: STRING NOT FOUND
+2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 0.138ms, Result: STRING NOT FOUND
+2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.75ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.112ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.118ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.278ms, Result: STRING NOT FOUND
+2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.126ms, Result: STRING NOT FOUND
+2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.852ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.1ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.092ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.095ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.094ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.861ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.133ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.092ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.31ms, Result: STRING NOT FOUND
+2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.107ms, Result: STRING NOT FOUND
+2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.853ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.109ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.113ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.091ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.087ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 1.206ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 0.113ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 0.117ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 0.086ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.856ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.223ms, Result: STRING NOT FOUND
+2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.109ms, Result: STRING NOT FOUND
+2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.123ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.091ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.762ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.108ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.288ms, Result: STRING NOT FOUND
+2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.127ms, Result: STRING NOT FOUND
+2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: STRING NOT FOUND
+2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.941ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.138ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.107ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.107ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.608ms, Result: STRING NOT FOUND
+2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.799ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.096ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.085ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.103ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.134ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.774ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.094ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.115ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.087ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.09ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 1.087ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 0.337ms, Result: STRING NOT FOUND
+2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 0.141ms, Result: STRING NOT FOUND
+2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 0.118ms, Result: STRING NOT FOUND
+2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 0.13ms, Result: STRING NOT FOUND
+2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.865ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.1ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.134ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.096ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.93ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.154ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.112ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.101ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.09ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.793ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.097ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.25ms, Result: STRING NOT FOUND
+2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.122ms, Result: STRING NOT FOUND
+2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.112ms, Result: STRING NOT FOUND
+2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.881ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.129ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.104ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.097ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.629ms, Result: STRING NOT FOUND
+2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.728ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.1ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.147ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.104ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.094ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.738ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.107ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.264ms, Result: STRING NOT FOUND
+2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.136ms, Result: STRING NOT FOUND
+2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.899ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.117ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.101ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 1.19ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 0.399ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 0.138ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 0.123ms, Result: ERROR: FILE NOT FOUND
+2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 0.105ms, Result: ERROR: FILE NOT FOUND
