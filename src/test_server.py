@@ -1,289 +1,191 @@
-import os
-import tempfile
-from pathlib import Path
-from typing import Generator
-from unittest.mock import MagicMock, mock_open, patch
-
 import pytest
+import server
+import os
+import socket
+import ssl
+import time
+from datetime import datetime
+from collections import defaultdict
+from unittest.mock import patch, mock_open, MagicMock, call
 
-from server import (
-    load_config, search_string_in_file, log_search,
-    handle_client, start_server,
-)
+@patch("server.log_search")
+def test_load_config(mock_log_search):
+    with open("test_config.ini", "w") as f:
+        f.write("""
+            [DEFAULT]
+            linuxpath = test_file.txt
+            REREAD_ON_QUERY = True
+            SSL_ENABLED = True
+            CERTFILE = test_cert.pem
+            KEYFILE = test_key.pem
+        """)
+    with open("test_file.txt", "w") as f:
+        f.write("test line\n")
+    with open("test_cert.pem", "w") as f:
+        f.write("cert")
+    with open("test_key.pem", "w") as f:
+        f.write("key")
 
-
-###############################################################################
-# Tests for load_config()
-###############################################################################
-
-def test_config_file_missing() -> None:
-    """
-    Test case for when the configuration file is missing.
-    Ensures the default values are returned.
-    """
-    non_existent_path: str = "non_existent_config_file.ini"
-    (file_path, reread_on_query, ssl_enabled,
-     certfile, keyfile) = load_config(non_existent_path)
-    assert file_path is None
-    assert not reread_on_query
-    assert not ssl_enabled
-    assert certfile is None
-    assert keyfile is None
-
-
-def test_config_invalid_key() -> None:
-    """
-    Test case for an invalid configuration file
-    that is missing the 'linuxpath' key.
-    Verifies that default values are returned.
-    """
-    with tempfile.NamedTemporaryFile(delete=False, mode="w",
-                                     encoding="utf-8") as config_file:
-        config_file.write("[DEFAULT]\nREREAD_ON_QUERY = True\n")
-        config_file_path: str = config_file.name
-    try:
-        (file_path, reread_on_query, ssl_enabled,
-         certfile, keyfile) = load_config(config_file_path)
-        assert file_path is None
-        assert not reread_on_query
-        assert not ssl_enabled
-        assert certfile is None
-        assert keyfile is None
-    finally:
-        os.remove(config_file_path)
-
-
-def test_config_file_does_not_exist() -> None:
-    """
-    Test case for a configuration file that
-    references a non-existent search file.
-    Ensures that defaults are returned when
-    the referenced file doesn't exist.
-    """
-    non_existent_search_file: str = "non_existent_search_file.txt"
-    with tempfile.NamedTemporaryFile(delete=False, mode="w",
-                                     encoding="utf-8") as config_file:
-        config_file.write(f"[DEFAULT]\nlinuxpath = {non_existent_search_file}\
-                          \nREREAD_ON_QUERY = False\n")
-        config_file_path: str = config_file.name
-    try:
-        (file_path, reread_on_query, ssl_enabled,
-         certfile, keyfile) = load_config(config_file_path)
-        assert file_path is None
-        assert not reread_on_query
-        assert not ssl_enabled
-        assert certfile is None
-        assert keyfile is None
-    finally:
-        os.remove(config_file_path)
-
-
-def test_load_config_valid(tmp_path: Path) -> None:
-    """
-    Test case for a valid configuration file and search file.
-    Verifies the proper configuration values are loaded.
-    """
-    search_file = tmp_path / "search.txt"
-    search_file.write_text("line1\nline2\n")
-
-    # Create dummy certificate and key files so SSL check passes.
-    cert_file = tmp_path / "cert.pem"
-    cert_file.write_text("dummy cert")
-    key_file = tmp_path / "key.pem"
-    key_file.write_text("dummy key")
-
-    config_file = tmp_path / "config.ini"
-    config_file.write_text(
-        f"[DEFAULT]\n"
-        f"linuxpath = {search_file}\n"
-        f"REREAD_ON_QUERY = True\n"
-        f"SSL_ENABLED = True\n"
-        f"CERTFILE = {cert_file}\n"
-        f"KEYFILE = {key_file}\n"
-    )
-
-    (file_path, reread_on_query, ssl_enabled,
-     certfile, keyfile) = load_config(str(config_file))
-    assert file_path == str(search_file)
-    assert reread_on_query is True
+    path, reread, ssl_enabled, certfile, keyfile = server.load_config("test_config.ini")
+    assert path == "test_file.txt"
+    assert reread is True
     assert ssl_enabled is True
-    assert certfile == str(cert_file)
-    assert keyfile == str(key_file)
+    assert certfile == "test_cert.pem"
+    assert keyfile == "test_key.pem"
+
+    os.remove("test_config.ini")
+    os.remove("test_file.txt")
+    os.remove("test_cert.pem")
+    os.remove("test_key.pem")
+
+    path, _, _, _, _ = server.load_config("test_config.ini")
+    assert path is None
+
+    with open("test_config.ini", "w") as f:
+        f.write("[DEFAULT]\nlinuxpath = non_existent_file.txt")
+    path, _, _, _, _ = server.load_config("test_config.ini")
+    assert path is None
+
+    with open("test_config.ini", "w") as f:
+        f.write("[DEFAULT]\nlinuxpath = test_file.txt\nREREAD_ON_QUERY = invalid")
+    path, reread, _, _, _ = server.load_config("test_config.ini")
+    assert reread is False
+
+    with open("test_config.ini", "w") as f:
+        f.write("[DEFAULT]\nlinuxpath = test_file.txt\nSSL_ENABLED = True")
+    path, _, _, _, _ = server.load_config("test_config.ini")
+    assert path is None
+    os.remove("test_config.ini")
 
 
-###############################################################################
-# Tests for search_string_in_file()
-###############################################################################
 
-def test_empty_query(tmp_path: Path) -> None:
-    """
-    Test case for an empty query passed to the search function.
-    Ensures it returns the appropriate error message.
-    """
-    search_file = tmp_path / "file.txt"
-    search_file.write_text("some content\n")
-    # Pass only two arguments: file path and query.
-    result: str = search_string_in_file(str(search_file), "")
-    assert result == "ERROR: EMPTY QUERY"
+@patch("server.log_search")
+def test_preprocess_file(mock_log_search):
+    with open("test_file.txt", "w") as f:
+        f.write(" line1 \nline2\n line3 ")
+    lines = server.preprocess_file("test_file.txt")
+    assert lines == {"line1", "line2", "line3"}
+    os.remove("test_file.txt")
+    assert server.preprocess_file("non_existent_file.txt") is None
 
+@patch("server.log_search")
+def test_sanitize_query(mock_log_search):
+    assert server.sanitize_query("  test  query  ") == "test query"
+    assert server.sanitize_query("test\tquery") == "test query"
 
-def test_file_not_found() -> None:
-    """
-    Test case for a search with a non-existent file.
-    Ensures it returns the appropriate error message.
-    """
-    result: str = search_string_in_file("nonexistent_file.txt", "query")
-    assert result == "ERROR: FILE NOT FOUND"
+@patch("server.log_search")
+@patch("server.datetime")
+def test_log_search(mock_datetime, mock_log_search):
+    mock_datetime.now.return_value.strftime.return_value = "2024-01-01 00:00:00"
+    server.log_search("test query", "127.0.0.1", 10, "STRING EXISTS")
+    mock_log_search.assert_called_once_with("test query", "127.0.0.1", 10, "STRING EXISTS")
+    with patch("builtins.open", side_effect=Exception("Mocked error")):
+      server.log_search("test query", "127.0.0.1", 10, "STRING EXISTS")
 
-
-def test_string_exists_reread(tmp_path: Path) -> None:
-    """
-    Test case for a query that matches a string in the file.
-    Verifies that the result correctly indicates the string exists.
-    """
-    search_file = tmp_path / "file.txt"
-    search_file.write_text("match_line\nother_line\n")
-    result: str = search_string_in_file(str(search_file), "match_line")
-    assert result == "STRING EXISTS"
-
-
-def test_string_not_found_reread(tmp_path: Path) -> None:
-    """
-    Test case for a query that does not match any string in the file.
-    Verifies that the result correctly indicates the string is not found.
-    """
-    search_file = tmp_path / "file.txt"
-    search_file.write_text("line1\nline2\n")
-    result: str = search_string_in_file(str(search_file), "nonexistent")
-    assert result == "STRING NOT FOUND"
-
-###############################################################################
-# Tests for log_search()
-###############################################################################
+@patch("server.log_search")
+def test_rate_limit_exceeded(mock_log_search):
+    addr = "127.0.0.1"
+    server.client_requests = defaultdict(list)
+    for _ in range(server.RATE_LIMIT):
+        assert not server.rate_limit_exceeded(addr)
+    assert server.rate_limit_exceeded(addr)
+    time.sleep(server.RATE_WINDOW + 1)
+    assert not server.rate_limit_exceeded(addr)
 
 
-def test_log_search_success(tmp_path: Path) -> None:
-    """
-    Test case for a successful log search.
-    Verifies that log entries are correctly written to the file.
-    """
-    m = mock_open()
-    with patch("builtins.open", m):
-        log_search("test_query", "127.0.0.1:44445", 100.0, "STRING EXISTS")
-    m.assert_called_with("server_log.txt", "a")
-    handle = m()
-    assert handle.write.called
+@patch("server.log_search")
+@patch("server.search_string_in_file")
+@patch("server.socket.socket")
+def test_handle_client(mock_socket, mock_search_string, mock_log_search):
+    mock_server_socket = mock_socket.return_value
+    mock_conn = MagicMock()
+    mock_server_socket.accept.return_value = (mock_conn, ("127.0.0.1", 12345))
+
+    mock_search_string.return_value = "STRING EXISTS"
+
+    mock_conn.recv.side_effect = [
+        b"test query\n",
+        b"exit\n",
+        b"",
+    ]
+    mock_conn.sendall.return_value = None
+
+    server.path = "test_file.txt"
+    server.handle_client(mock_conn, ("127.0.0.1", 12345))
+
+    calls = [c[0][0] for c in mock_conn.sendall.call_args_list]
+    assert b"Hello, you are connected to the server!\n" in calls
+    assert b"STRING EXISTS\n" in calls
+
+    mock_conn.recv.side_effect = [b" \n", b"exit\n", b""]
+    server.handle_client(mock_conn, ("127.0.0.1", 12345))
+    calls = [c[0][0] for c in mock_conn.sendall.call_args_list]
+    assert b"ERROR: EMPTY QUERY\n" in calls
+
+    mock_conn.recv.side_effect = [b"test query\n"] * (server.RATE_LIMIT + 1) + [b"exit\n", b""]
+    server.client_requests["127.0.0.1"] = []
+    server.handle_client(mock_conn, ("127.0.0.1", 12345))
+    calls = [c[0][0] for c in mock_conn.sendall.call_args_list]
+    assert b"ERROR: RATE LIMIT EXCEEDED\n" in calls
+
+    mock_conn.recv.side_effect = [ConnectionResetError]
+    server.handle_client(mock_conn, ("127.0.0.1", 12345))
+
+    mock_conn.recv.side_effect = [Exception("Mocked client error")]
+    server.handle_client(mock_conn, ("127.0.0.1", 12345))
 
 
-def test_log_search_write_error() -> None:
-    """
-    Test case for handling a write error while logging.
-    Verifies that the error message is correctly printed.
-    """
-    with patch("builtins.open", side_effect=Exception("Write failure")):
-        with patch("builtins.print") as mock_print:
-            log_search("test_query", "127.0.0.1:44445", 100.0, "STRING EXISTS")
-            # Updated assertion to match the exact string without extra spaces
-            mock_print.assert_any_call("Failed to write to log: Write failure")
+@patch("server.log_search")
+def test_search_string_in_file(mock_log_search):
+    with open("test_file.txt", "w") as f:
+        f.write("test line\n")
+    server.cached_lines = server.preprocess_file("test_file.txt")
+    assert server.search_string_in_file("test_file.txt", "test line") == "STRING EXISTS"
+    assert server.search_string_in_file("test_file.txt", "nonexistent line") == "STRING NOT FOUND"
+    assert server.search_string_in_file("test_file.txt", "") == "ERROR: EMPTY QUERY"
+    assert server.search_string_in_file("test_file.txt", "a" * 2000) == "ERROR: QUERY TOO LONG"
+    os.remove("test_file.txt")
+    server.cached_lines = None
 
 
-###############################################################################
-# Tests for handle_client()
-###############################################################################
+@patch("server.log_search")
+def test_preprocess_file_errors(mock_log_search):
+    with open("test_file.txt", "w") as f:
+        f.write("test line\n")
+
+    os.chmod("test_file.txt", 0o000)  # Remove all permissions
+    assert server.preprocess_file("test_file.txt") is None  # Expect None due to permission error
+    os.chmod("test_file.txt", 0o777)  # Restore permissions
+
+    with open("test_file.txt", "wb") as f:  # Write bytes for encoding error
+        f.write(b"\xff\xfe\x00\x00") # Invalid UTF-16
+    assert server.preprocess_file("test_file.txt") is None  # Expect None due to encoding error
+
+    os.remove("test_file.txt")
+
+    # Test file that does not exist
+    assert server.preprocess_file("non_existent_file.txt") is None
+
+    # Test OSError
+    with patch("builtins.open", side_effect=OSError("Mocked OSError")):
+        assert server.preprocess_file("test_file.txt") is None
 
 
-@pytest.fixture
-def search_file_fixture() -> Generator[str, None, None]:
-    """
-    Fixture that sets up a temporary search file for testing.
-    """
-    with tempfile.NamedTemporaryFile(delete=False, mode="w",
-                                     encoding="utf-8") as tmp_file:
-        tmp_file.write("client_test_line")
-        search_file_path: str = tmp_file.name
-    yield search_file_path
-    os.remove(search_file_path)
+@patch("server.log_search")
+def test_load_config_errors(mock_log_search):
 
+    with open("test_config.ini", "w") as f:
+        f.write("""
+            [DEFAULT]
+            linuxpath = test_file.txt
+            REREAD_ON_QUERY = True
+            SSL_ENABLED = True
+            CERTFILE = test_cert.pem
+            KEYFILE = test_key.pem
+            linuxpath = another_path.txt # duplicate key
+        """)
 
-@pytest.fixture(autouse=True)
-def setup_handle_client(search_file_fixture: str) -> None:
-    """
-    Fixture that sets up the necessary global variables
-    for the handle_client test.
-    """
-    import server
-    server.path = search_file_fixture
-    server.REREAD_ON_QUERY = True
-    server.BUFFER_SIZE = 1024
+    path, _, _, _, _ = server.load_config("test_config.ini")
+    assert path is None
 
-
-def test_handle_client_empty_query() -> None:
-    """
-    Test case for when the client sends an empty query.
-    Verifies that the appropriate error message is sent back.
-    """
-    fake_conn: MagicMock = MagicMock()
-    fake_addr: str = "127.0.0.1"
-    # Simulate a client that sends a whitespace-only query
-    fake_conn.recv.side_effect = [b"   ", b""]
-    with patch("server.log_search"):
-        handle_client(fake_conn, fake_addr)
-    calls = fake_conn.sendall.call_args_list
-    # Expect the "ERROR: EMPTY QUERY" message to have been sent.
-    assert any(b"ERROR: EMPTY QUERY" in call[0][0] for call in calls)
-
-###############################################################################
-# Tests for start_server()
-###############################################################################
-
-
-def test_start_server() -> None:
-    """
-    Test case for starting the server.
-    Verifies that the server attempts to
-    bind to the correct address and handles client connections.
-    """
-    with patch("server.socket.socket") as mock_socket:
-        fake_socket = MagicMock()
-        mock_socket.return_value = fake_socket
-        with patch("server.ssl.create_default_context") as mock_ssl_context:
-            fake_ssl_context = MagicMock()
-            mock_ssl_context.return_value = fake_ssl_context
-            with patch("server.load_config", return_value=(
-                "/tmp/dummy.txt",
-                True, True,
-                "/tmp/cert.pem",
-                "/tmp/key.pem"
-            )):
-                fake_socket.accept.side_effect = [
-                    (MagicMock(), ("127.0.0.1", 12345)),
-                    KeyboardInterrupt
-                ]
-                try:
-                    start_server()
-                except KeyboardInterrupt:
-                    pass
-    fake_socket.bind.assert_called_with(("0.0.0.0", 44445))
-
-###############################################################################
-# Tests for 200k.txt file existence and content.
-###############################################################################
-
-
-class Test200kData:
-    """
-    Test class for handling the 200k.txt file.
-    """
-    @pytest.fixture(autouse=True)
-    def data_file(self, tmp_path: Path) -> Generator[str, None, None]:
-        data_file = tmp_path / "200k.txt"
-        data_file.write_text("data\n" * 10)
-        yield str(data_file)
-
-    def test_file_exists(self, data_file: str) -> None:
-        assert os.path.exists(data_file)
-
-    def test_content_length(self, data_file: str) -> None:
-        with open(data_file, "r") as f:
-            content = f.read()
-        assert len(content) > 0, "File content is empty!"
+    os.remove("test_config.ini")

@@ -1,83 +1,90 @@
-# Secure Search Service
+## 1. Install Dependencies
 
-This project implements a secure search service where a client can send queries to a server, and the server responds with the search results from a file. The server supports SSL encryption for secure communication, and both server and client configurations can be customized using respective configuration files.
+Ensure Python is installed, then install any required dependencies.
 
-
-### Prerequisites
-
-- Python 3.7 or higher
-- Required Python packages:
-  - `socket`
-  - `ssl`
-  - `configparser`
-  - `os`
-  - `threading`
-  - `time`
-  - `unittest`
-  - `pytest`
-  - `matplotlib`
-
-You can install the necessary dependencies by running:
-
-pip install -r requirements.txt
-
-## on linux Run 
-sudo apt-get install openssl
-
-## On macOS run
-brew install openssl
-
-
-## Generate the SSL Certificate and Key Files
-You can generate the self-signed SSL certificate (cert.pem) and the private key (key.pem) using the following OpenSSL command:
-
-openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout key.pem -out cert.pem
-
-## Update Your Configuration
 [DEFAULT]
-linuxpath = /path/to/your/file.txt
-REREAD_ON_QUERY = True
-SSL_ENABLED = True
-CERTFILE = /path/to/cert.pem
-KEYFILE = /path/to/key.pem
+SSL_ENABLED=True  # Change to False if SSL is not needed
+SERVER_CERT=cert.pem  # Path to server certificate if using SSL
 
 
-Ensure you have the cert.pem and key.pem files in the same folder ready for SSL encryption.
+
+## 2. Configure the Client
+
+Edit client_config.ini to set up SSL and server details.
+
+[DEFAULT]
+SSL_ENABLED=True  # Change to False if SSL is not needed
+SERVER_CERT=cert.pem  # Path to server certificate if using SSL
 
 
-Run the server script:
-python server.py
+
+## 3. Create a Systemd Service
+
+Create a new systemd service file. make sure to replace the paths with the your paths:
+the user and the group are your username
+
+sudo nano /etc/systemd/system/secure_search_client.service
+
+Add the following content:
+
+[Unit]
+Description=Secure Search Client Daemon
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /home/$USER/secure_search_client/client.py --config /home/$USER/secure_search_client/client_config.ini
+WorkingDirectory=/home/$USER/secure_search_client
+Restart=always
+User=$USER
+Group=$USER
+StandardOutput=append:/home/$USER/secure_search_client/client.log
+StandardError=append:/home/$USER/secure_search_client/client_error.log
+
+[Install]
+WantedBy=multi-user.target
 
 
-## Using systemd for Daemonization:
-Create a new service file in /etc/systemd/system:
+## 4. Reload and Start the Service
+
+sudo systemctl daemon-reload
+sudo systemctl enable secure_search_client.service
+sudo systemctl start secure_search_client.service
 
 
-sudo nano /etc/systemd/system/secure-search.service
 
-Reload the systemd service manager:
+## 5. Verify the Service
+
+Check the status of the service:
+sudo systemctl status secure_search_client.service
+
+To view logs:
+journalctl -u secure_search_client.service -f
+
+
+
+## 6. Stop or Restart the Service
+
+To stop:
+sudo systemctl stop secure_search_client.service
+
+To restart:
+sudo systemctl restart secure_search_client.service
+
+
+Uninstallation
+
+To remove the service:
+sudo systemctl stop secure_search_client.service
+sudo systemctl disable secure_search_client.service
+sudo rm /etc/systemd/system/secure_search_client.service
 sudo systemctl daemon-reload
 
 
-## Enable the service to start on boot:
-sudo systemctl enable secure-search.service
+Troubleshooting
+journalctl -xe -u secure_search_client.service
 
-## Start the service:
-sudo systemctl start secure-search.service
-
-
-## Check the status of the service:
-sudo systemctl status secure-search.service
+Ensure the client script has execute permissions:
+chmod +x /home/$USER/secure_search_client/client.py
 
 
-## Start the Client
-python client.py
-
-## Benchmarking
-You can benchmark the execution times of the search service for different file sizes by running the tests:
-
-pytest test_benchmark.py
-
-
-## Logging
-Server logs are stored in server_log.txt. You can find information about search queries and their execution times there.
+Verify Python dependencies are installed.

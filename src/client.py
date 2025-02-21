@@ -69,7 +69,7 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument(
         "--port",
         type=int,
-        default=int(os.getenv("SERVER_PORT", 44445)),
+        default=int(os.getenv("SERVER_PORT", 44446)),
         help="Server port.",
     )
     return parser.parse_args()

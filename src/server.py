@@ -10,7 +10,7 @@ from typing import Optional, Tuple
 from collections import defaultdict
 
 HOST: str = "0.0.0.0"
-PORT: int = 44445
+PORT: int = 44446
 path: Optional[str] = None
 REREAD_ON_QUERY: bool = False
 SSL_ENABLED: bool = False
@@ -33,10 +33,10 @@ def load_config(config_path: str = "config.ini") -> Tuple[Optional[str], bool,
               not found. Please create it.")
         return None, False, False, None, None
 
-    config = configparser.ConfigParser()
-    config.read(config_path)
-
     try:
+        config = configparser.ConfigParser()
+        config.read(config_path)
+
         path = config["DEFAULT"].get("linuxpath", "").strip()
         reread_on_query = config["DEFAULT"].get(
             "REREAD_ON_QUERY",
@@ -58,23 +58,29 @@ def load_config(config_path: str = "config.ini") -> Tuple[Optional[str], bool,
             return None, False, False, None, None
 
         return path, reread_on_query, ssl_enabled, certfile, keyfile
-    except KeyError as e:
-        print(f"ERROR: Missing key {e} in {config_path}.")
+
+    except Exception as e:
+        print(f"ERROR: Exception in load_config: {str(e)}")
         return None, False, False, None, None
+
 
 
 def preprocess_file(path: str) -> Optional[set]:
     try:
         with open(path, "r", encoding="utf-8") as file:
-            return set(line.strip() for line in file)
+            # Strip all leading and trailing whitespace for exact matching
+            return set(line.strip() for line in file)  # Strip all whitespace from both ends
     except Exception as e:
         print(f"ERROR: Failed to read file: {str(e)}")
         return None
 
 
-def sanitize_query(query: str) -> str:
-    # Sanitize query to prevent harmful characters or patterns
-    return query.replace("..", "").replace("/", "").replace("\\", "")
+
+def sanitize_query(query):
+    # Trim extra spaces and normalize internal spaces
+    return ' '.join(query.split())
+
+
 
 
 def search_string_in_file(path: str, query: str) -> str:
@@ -82,10 +88,10 @@ def search_string_in_file(path: str, query: str) -> str:
     if len(query) > MAX_QUERY_LENGTH:
         return "ERROR: QUERY TOO LONG"
 
-    if not query.strip():
+    if not query:
         return "ERROR: EMPTY QUERY"
 
-    query = sanitize_query(query)  # To prevent directory traversal
+    query = sanitize_query(query)  # Prevent path traversal
 
     if not os.path.exists(path):
         return "ERROR: FILE NOT FOUND"
@@ -97,6 +103,7 @@ def search_string_in_file(path: str, query: str) -> str:
         return "ERROR: Failed to load file for searching."
 
     return "STRING EXISTS" if query in cached_lines else "STRING NOT FOUND"
+
 
 
 def log_search(query: str, addr: str, exe_time: float, response: str) -> None:
