@@ -20,8 +20,9 @@ SERVER_CERT=cert.pem  # Path to server certificate if using SSL
 
 ## 3. Create a Systemd Service
 
-Create a new systemd service file. make sure to replace the paths with the your paths:
-the user and the group are your username
+Create a new systemd service file. Make sure to replace the paths with the your paths:
+Set the 'User' and 'Group' fields to your username.
+
 
 sudo nano /etc/systemd/system/secure_search_client.service
 
@@ -71,7 +72,7 @@ To restart:
 sudo systemctl restart secure_search_client.service
 
 
-Uninstallation
+## Uninstallation
 
 To remove the service:
 sudo systemctl stop secure_search_client.service

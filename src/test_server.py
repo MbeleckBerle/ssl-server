@@ -1,18 +1,14 @@
-import pytest
 import server
 import os
-import socket
-import ssl
 import time
-from datetime import datetime
 from collections import defaultdict
-from unittest.mock import patch, mock_open, MagicMock, call
+from unittest.mock import patch, MagicMock
+
 
 @patch("server.log_search")
 def test_load_config(mock_log_search):
     with open("test_config.ini", "w") as f:
-        f.write("""
-            [DEFAULT]
+        f.write("""[DEFAULT]
             linuxpath = test_file.txt
             REREAD_ON_QUERY = True
             SSL_ENABLED = True
@@ -26,7 +22,8 @@ def test_load_config(mock_log_search):
     with open("test_key.pem", "w") as f:
         f.write("key")
 
-    path, reread, ssl_enabled, certfile, keyfile = server.load_config("test_config.ini")
+    (path, reread, ssl_enabled,
+     certfile, keyfile) = server.load_config("test_config.ini")
     assert path == "test_file.txt"
     assert reread is True
     assert ssl_enabled is True
@@ -47,7 +44,8 @@ def test_load_config(mock_log_search):
     assert path is None
 
     with open("test_config.ini", "w") as f:
-        f.write("[DEFAULT]\nlinuxpath = test_file.txt\nREREAD_ON_QUERY = invalid")
+        f.write("[DEFAULT]\nlinuxpath = \
+                test_file.txt\nREREAD_ON_QUERY = invalid")
     path, reread, _, _, _ = server.load_config("test_config.ini")
     assert reread is False
 
@@ -56,7 +54,6 @@ def test_load_config(mock_log_search):
     path, _, _, _, _ = server.load_config("test_config.ini")
     assert path is None
     os.remove("test_config.ini")
-
 
 
 @patch("server.log_search")
@@ -68,19 +65,24 @@ def test_preprocess_file(mock_log_search):
     os.remove("test_file.txt")
     assert server.preprocess_file("non_existent_file.txt") is None
 
+
 @patch("server.log_search")
 def test_sanitize_query(mock_log_search):
     assert server.sanitize_query("  test  query  ") == "test query"
     assert server.sanitize_query("test\tquery") == "test query"
 
+
 @patch("server.log_search")
 @patch("server.datetime")
 def test_log_search(mock_datetime, mock_log_search):
-    mock_datetime.now.return_value.strftime.return_value = "2024-01-01 00:00:00"
+    t = "2024-01-01 00:00:00"
+    mock_datetime.now.return_value.strftime.return_value = t
     server.log_search("test query", "127.0.0.1", 10, "STRING EXISTS")
-    mock_log_search.assert_called_once_with("test query", "127.0.0.1", 10, "STRING EXISTS")
+    mock_log_search.assert_called_once_with(
+        "test query", "127.0.0.1", 10, "STRING EXISTS")
     with patch("builtins.open", side_effect=Exception("Mocked error")):
-      server.log_search("test query", "127.0.0.1", 10, "STRING EXISTS")
+        server.log_search("test query", "127.0.0.1", 10, "STRING EXISTS")
+
 
 @patch("server.log_search")
 def test_rate_limit_exceeded(mock_log_search):
@@ -106,7 +108,7 @@ def test_handle_client(mock_socket, mock_search_string, mock_log_search):
     mock_conn.recv.side_effect = [
         b"test query\n",
         b"exit\n",
-        b"",
+        b""
     ]
     mock_conn.sendall.return_value = None
 
@@ -122,7 +124,8 @@ def test_handle_client(mock_socket, mock_search_string, mock_log_search):
     calls = [c[0][0] for c in mock_conn.sendall.call_args_list]
     assert b"ERROR: EMPTY QUERY\n" in calls
 
-    mock_conn.recv.side_effect = [b"test query\n"] * (server.RATE_LIMIT + 1) + [b"exit\n", b""]
+    limit = [b"test query\n"] * (server.RATE_LIMIT + 1) + [b"exit\n", b""]
+    mock_conn.recv.side_effect = limit
     server.client_requests["127.0.0.1"] = []
     server.handle_client(mock_conn, ("127.0.0.1", 12345))
     calls = [c[0][0] for c in mock_conn.sendall.call_args_list]
@@ -140,10 +143,14 @@ def test_search_string_in_file(mock_log_search):
     with open("test_file.txt", "w") as f:
         f.write("test line\n")
     server.cached_lines = server.preprocess_file("test_file.txt")
-    assert server.search_string_in_file("test_file.txt", "test line") == "STRING EXISTS"
-    assert server.search_string_in_file("test_file.txt", "nonexistent line") == "STRING NOT FOUND"
-    assert server.search_string_in_file("test_file.txt", "") == "ERROR: EMPTY QUERY"
-    assert server.search_string_in_file("test_file.txt", "a" * 2000) == "ERROR: QUERY TOO LONG"
+    assert server.search_string_in_file(
+        "test_file.txt", "test line") == "STRING EXISTS"
+    assert server.search_string_in_file(
+        "test_file.txt", "nonexistent line") == "STRING NOT FOUND"
+    assert server.search_string_in_file(
+        "test_file.txt", "") == "ERROR: EMPTY QUERY"
+    assert server.search_string_in_file(
+        "test_file.txt", "a" * 2000) == "ERROR: QUERY TOO LONG"
     os.remove("test_file.txt")
     server.cached_lines = None
 
@@ -154,12 +161,12 @@ def test_preprocess_file_errors(mock_log_search):
         f.write("test line\n")
 
     os.chmod("test_file.txt", 0o000)  # Remove all permissions
-    assert server.preprocess_file("test_file.txt") is None  # Expect None due to permission error
+    assert server.preprocess_file("test_file.txt") is None
     os.chmod("test_file.txt", 0o777)  # Restore permissions
 
-    with open("test_file.txt", "wb") as f:  # Write bytes for encoding error
-        f.write(b"\xff\xfe\x00\x00") # Invalid UTF-16
-    assert server.preprocess_file("test_file.txt") is None  # Expect None due to encoding error
+    with open("test_file.txt", "wb") as f:
+        f.write(b"\xff\xfe\x00\x00")
+    assert server.preprocess_file("test_file.txt") is None
 
     os.remove("test_file.txt")
 
@@ -173,10 +180,8 @@ def test_preprocess_file_errors(mock_log_search):
 
 @patch("server.log_search")
 def test_load_config_errors(mock_log_search):
-
     with open("test_config.ini", "w") as f:
-        f.write("""
-            [DEFAULT]
+        f.write("""[DEFAULT]
             linuxpath = test_file.txt
             REREAD_ON_QUERY = True
             SSL_ENABLED = True
@@ -184,8 +189,6 @@ def test_load_config_errors(mock_log_search):
             KEYFILE = test_key.pem
             linuxpath = another_path.txt # duplicate key
         """)
-
     path, _, _, _, _ = server.load_config("test_config.ini")
     assert path is None
-
     os.remove("test_config.ini")

@@ -39,10 +39,9 @@ def load_config(config_path: str = "config.ini") -> Tuple[Optional[str], bool,
 
         path = config["DEFAULT"].get("linuxpath", "").strip()
         reread_on_query = config["DEFAULT"].get(
-            "REREAD_ON_QUERY",
-            "False").strip().lower() == "true"
-        ssl_enabled = config["DEFAULT"].get("SSL_ENABLED",
-                                            "False").strip().lower() == "true"
+            "REREAD_ON_QUERY", "False").strip().lower() == "true"
+        ssl_enabled = config["DEFAULT"].get(
+            "SSL_ENABLED", "False").strip().lower() == "true"
         certfile = config["DEFAULT"].get("CERTFILE", "").strip()
         keyfile = config["DEFAULT"].get("KEYFILE", "").strip()
 
@@ -51,10 +50,10 @@ def load_config(config_path: str = "config.ini") -> Tuple[Optional[str], bool,
                   does not exist. Check 'linuxpath' in {config_path}.")
             return None, False, False, None, None
 
-        if ssl_enabled and (not os.path.exists(certfile) or not
-                            os.path.exists(keyfile)):
-            print("ERROR: SSL is enabled but certificate or\
-                   key does not exist.")
+        if ssl_enabled and (not os.path.exists(certfile)
+                            or not os.path.exists(keyfile)):
+            print(
+                "ERROR: SSL is enabled but certificate or key does not exist.")
             return None, False, False, None, None
 
         return path, reread_on_query, ssl_enabled, certfile, keyfile
@@ -64,23 +63,19 @@ def load_config(config_path: str = "config.ini") -> Tuple[Optional[str], bool,
         return None, False, False, None, None
 
 
-
 def preprocess_file(path: str) -> Optional[set]:
     try:
         with open(path, "r", encoding="utf-8") as file:
             # Strip all leading and trailing whitespace for exact matching
-            return set(line.strip() for line in file)  # Strip all whitespace from both ends
+            return set(line.strip() for line in file)  # Strip all whitespace
     except Exception as e:
         print(f"ERROR: Failed to read file: {str(e)}")
         return None
 
 
-
 def sanitize_query(query):
     # Trim extra spaces and normalize internal spaces
     return ' '.join(query.split())
-
-
 
 
 def search_string_in_file(path: str, query: str) -> str:
@@ -102,8 +97,8 @@ def search_string_in_file(path: str, query: str) -> str:
     if cached_lines is None:
         return "ERROR: Failed to load file for searching."
 
+    # Check for exact match
     return "STRING EXISTS" if query in cached_lines else "STRING NOT FOUND"
-
 
 
 def log_search(query: str, addr: str, exe_time: float, response: str) -> None:
@@ -139,8 +134,7 @@ def handle_client(conn: socket.socket, addr: Tuple[str, int]) -> None:
             if not received_raw:
                 break
             received_data = received_raw.decode("utf-8")
-            # If the message is empty after stripping,
-            # send an error instead of disconnecting
+
             if received_data.strip() == "":
                 response = "ERROR: EMPTY QUERY"
                 conn.sendall(f"{response}\n".encode("utf-8"))
