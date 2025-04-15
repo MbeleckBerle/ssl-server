@@ -1,340 +1,524 @@
-DEBUG: 2025-02-19 22:41:19, Query: 'ser', IP: 127.0.0.1:37554, Execution Time: 20.003ms, Result: STRING NOT FOUND
-DEBUG: 2025-02-19 22:41:30, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:37554, Execution Time: 0.024ms, Result: STRING EXISTS
-DEBUG: 2025-02-19 22:42:58, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:54642, Execution Time: 24.258ms, Result: STRING EXISTS
-DEBUG: 2025-02-19 22:42:59, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:54642, Execution Time: 0.02ms, Result: STRING EXISTS
-DEBUG: 2025-02-19 22:43:00, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:54642, Execution Time: 0.019ms, Result: STRING EXISTS
-2025-02-19 22:51:08, Query: '[REDACTED]', IP: 127.0.0.1:34442, Execution Time: 23.556ms, Result: STRING NOT FOUND
-2025-02-19 22:51:32, Query: '[REDACTED]', IP: 127.0.0.1:34556, Execution Time: 0.026ms, Result: STRING EXISTS
-2025-02-19 22:51:48, Query: '[REDACTED]', IP: 127.0.0.1:50268, Execution Time: 0.019ms, Result: STRING NOT FOUND
-2025-02-19 22:54:10, Query: 'asdf', IP: 127.0.0.1:53498, Execution Time: 24.86ms, Result: STRING NOT FOUND
-2025-02-19 22:54:15, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.015ms, Result: STRING EXISTS
-2025-02-19 22:54:16, Query: 'asdf', IP: 127.0.0.1:53498, Execution Time: 0.015ms, Result: STRING NOT FOUND
-2025-02-19 22:54:17, Query: 'asdf', IP: 127.0.0.1:53498, Execution Time: 0.018ms, Result: STRING NOT FOUND
-2025-02-19 22:54:18, Query: 'asdf', IP: 127.0.0.1:53498, Execution Time: 0.017ms, Result: STRING NOT FOUND
-2025-02-19 22:54:21, Query: 'asd', IP: 127.0.0.1:53498, Execution Time: 0.018ms, Result: STRING NOT FOUND
-2025-02-19 22:54:26, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.018ms, Result: STRING EXISTS
-2025-02-19 22:54:31, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.021ms, Result: STRING EXISTS
-2025-02-19 22:54:32, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.015ms, Result: STRING EXISTS
-2025-02-19 22:54:35, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.02ms, Result: STRING EXISTS
-2025-02-19 22:54:35, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.021ms, Result: STRING EXISTS
-2025-02-19 22:54:38, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.02ms, Result: STRING EXISTS
-2025-02-19 22:54:43, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.02ms, Result: STRING EXISTS
-2025-02-19 22:54:44, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.017ms, Result: STRING EXISTS
-2025-02-19 22:54:46, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.024ms, Result: STRING EXISTS
-2025-02-19 22:54:47, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.019ms, Result: STRING EXISTS
-2025-02-19 22:54:49, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53498, Execution Time: 0.016ms, Result: STRING EXISTS
-2025-02-19 22:56:39, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 22.329ms, Result: STRING NOT FOUND
-2025-02-19 22:56:40, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 0.014ms, Result: STRING NOT FOUND
-2025-02-19 22:56:42, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 0.016ms, Result: STRING NOT FOUND
-2025-02-19 22:56:42, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 0.015ms, Result: STRING NOT FOUND
-2025-02-19 22:56:43, Query: 'asdf', IP: 127.0.0.1:36222, Execution Time: 0.015ms, Result: STRING NOT FOUND
-2025-02-19 22:56:52, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:36222, Execution Time: 0.014ms, Result: STRING EXISTS
-2025-02-19 22:57:12, Query: '20;0;23;16;0;18;3;0;', IP: 127.0.0.1:36222, Execution Time: 0.015ms, Result: STRING EXISTS
-2025-02-19 22:57:14, Query: '20;0;23;16;0;18;3;0;', IP: 127.0.0.1:36222, Execution Time: 0.015ms, Result: STRING EXISTS
-2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.533ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.061ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.277ms, Result: STRING NOT FOUND
-2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.08ms, Result: STRING NOT FOUND
-2025-02-19 23:00:33, Query: '<MagicMock name='mock.recv().decode().strip()' id='140006628518128'>', IP: 127.0.0.1:12345, Execution Time: 0.087ms, Result: STRING NOT FOUND
-2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.355ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.06ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.4ms, Result: STRING NOT FOUND
-2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.118ms, Result: STRING NOT FOUND
-2025-02-19 23:01:06, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140423353762816'>', IP: 127.0.0.1:12345, Execution Time: 0.068ms, Result: STRING NOT FOUND
-2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.388ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.056ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.05ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.041ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:02:49, Query: '<MagicMock name='mock.recv().decode().strip()' id='140215118946816'>', IP: 127.0.0.1:12345, Execution Time: 0.046ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.593ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.047ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.039ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.037ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:02:54, Query: '<MagicMock name='mock.recv().decode().strip()' id='140028175546016'>', IP: 127.0.0.1:12345, Execution Time: 0.051ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.378ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.046ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.268ms, Result: STRING NOT FOUND
-2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.067ms, Result: STRING NOT FOUND
-2025-02-19 23:03:52, Query: '<MagicMock name='mock.recv().decode().strip()' id='140069783859744'>', IP: 127.0.0.1:12345, Execution Time: 0.053ms, Result: STRING NOT FOUND
-2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.376ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.055ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.056ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.498ms, Result: STRING NOT FOUND
-2025-02-19 23:05:55, Query: '<MagicMock name='mock.recv().decode().strip()' id='140659048344080'>', IP: 127.0.0.1:12345, Execution Time: 0.058ms, Result: STRING NOT FOUND
-2025-02-19 23:07:21, Query: 'asdf', IP: 127.0.0.1:50234, Execution Time: 22.013ms, Result: STRING NOT FOUND
-2025-02-19 23:07:22, Query: 'asdf', IP: 127.0.0.1:50234, Execution Time: 0.02ms, Result: STRING NOT FOUND
-2025-02-19 23:07:23, Query: 'asdf', IP: 127.0.0.1:50234, Execution Time: 0.021ms, Result: STRING NOT FOUND
-2025-02-19 23:07:27, Query: 'adf', IP: 127.0.0.1:50234, Execution Time: 0.019ms, Result: STRING NOT FOUND
-2025-02-19 23:07:30, Query: 'adsf', IP: 127.0.0.1:50234, Execution Time: 0.022ms, Result: STRING NOT FOUND
-2025-02-19 23:07:33, Query: 'asfd', IP: 127.0.0.1:50234, Execution Time: 0.02ms, Result: STRING NOT FOUND
-2025-02-19 23:07:33, Query: 'asdf', IP: 127.0.0.1:50234, Execution Time: 0.015ms, Result: STRING NOT FOUND
-2025-02-19 23:07:34, Query: 'asd', IP: 127.0.0.1:50234, Execution Time: 0.015ms, Result: STRING NOT FOUND
-2025-02-19 23:07:37, Query: 'fasd', IP: 127.0.0.1:50234, Execution Time: 0.021ms, Result: STRING NOT FOUND
-2025-02-19 23:07:45, Query: 'f4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.014ms, Result: STRING NOT FOUND
-2025-02-19 23:07:46, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.015ms, Result: STRING EXISTS
-2025-02-19 23:07:48, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.016ms, Result: STRING EXISTS
-2025-02-19 23:07:48, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.017ms, Result: STRING EXISTS
-2025-02-19 23:07:49, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:50234, Execution Time: 0.016ms, Result: STRING EXISTS
-2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.515ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.076ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.241ms, Result: STRING NOT FOUND
-2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.069ms, Result: STRING NOT FOUND
-2025-02-19 23:08:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140052891950224'>', IP: 127.0.0.1:12345, Execution Time: 0.092ms, Result: STRING NOT FOUND
-2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.449ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.062ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.069ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.09ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:09:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139820387275808'>', IP: 127.0.0.1:12345, Execution Time: 0.046ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.819ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.107ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.104ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.278ms, Result: STRING NOT FOUND
-2025-02-19 23:19:24, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.115ms, Result: STRING NOT FOUND
-2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.905ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.108ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.185ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.101ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:19:29, Query: '[REDACTED]', IP: 127.0.0.1:12345, Execution Time: 0.262ms, Result: STRING NOT FOUND
-2025-02-19 23:19:40, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 20.733ms, Result: STRING NOT FOUND
-2025-02-19 23:19:43, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 0.023ms, Result: STRING NOT FOUND
-2025-02-19 23:19:44, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 0.019ms, Result: STRING NOT FOUND
-2025-02-19 23:19:46, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 0.022ms, Result: STRING NOT FOUND
-2025-02-19 23:20:34, Query: '[REDACTED]', IP: 127.0.0.1:35938, Execution Time: 0.018ms, Result: STRING NOT FOUND
-2025-02-19 23:22:59, Query: 'asd', IP: 127.0.0.1:55934, Execution Time: 21.447ms, Result: STRING NOT FOUND
-2025-02-19 23:23:07, Query: 'asd', IP: 127.0.0.1:55934, Execution Time: 0.083ms, Result: STRING NOT FOUND
-2025-02-19 23:23:08, Query: 'sdf', IP: 127.0.0.1:55934, Execution Time: 0.016ms, Result: STRING NOT FOUND
-2025-02-19 23:23:08, Query: 'asd', IP: 127.0.0.1:55934, Execution Time: 0.018ms, Result: STRING NOT FOUND
-2025-02-19 23:23:08, Query: 'fas', IP: 127.0.0.1:55934, Execution Time: 0.021ms, Result: STRING NOT FOUND
-2025-02-19 23:23:09, Query: 'fasd', IP: 127.0.0.1:55934, Execution Time: 0.023ms, Result: STRING NOT FOUND
-2025-02-19 23:23:23, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.023ms, Result: STRING EXISTS
-2025-02-19 23:23:24, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.017ms, Result: STRING EXISTS
-2025-02-19 23:23:25, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.017ms, Result: STRING EXISTS
-2025-02-19 23:23:25, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.015ms, Result: STRING EXISTS
-2025-02-19 23:23:28, Query: 'asd', IP: 127.0.0.1:55934, Execution Time: 0.018ms, Result: STRING NOT FOUND
-2025-02-19 23:23:34, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.016ms, Result: STRING EXISTS
-2025-02-19 23:23:35, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.017ms, Result: STRING EXISTS
-2025-02-19 23:23:35, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.02ms, Result: STRING EXISTS
-2025-02-19 23:23:36, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.018ms, Result: STRING EXISTS
-2025-02-19 23:23:38, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.019ms, Result: STRING EXISTS
-2025-02-19 23:23:44, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.02ms, Result: STRING EXISTS
-2025-02-19 23:23:47, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.02ms, Result: STRING EXISTS
-2025-02-19 23:23:48, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.019ms, Result: STRING EXISTS
-2025-02-19 23:23:49, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:55934, Execution Time: 0.018ms, Result: STRING EXISTS
-2025-02-19 23:23:51, Query: 'clear', IP: 127.0.0.1:55934, Execution Time: 0.021ms, Result: STRING NOT FOUND
-2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.859ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.45ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.108ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.15ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:24:22, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140288710218976'>', IP: 127.0.0.1:12345, Execution Time: 0.352ms, Result: STRING NOT FOUND
-2025-02-19 23:27:49, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140614239622752'>', IP: 127.0.0.1:12345, Execution Time: 0.987ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:27:49, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140614239622752'>', IP: 127.0.0.1:12345, Execution Time: 0.122ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:27:49, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140614239622752'>', IP: 127.0.0.1:12345, Execution Time: 0.108ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:28:03, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140222737781936'>', IP: 127.0.0.1:12345, Execution Time: 0.924ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:28:03, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140222737781936'>', IP: 127.0.0.1:12345, Execution Time: 0.422ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:28:03, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140222737781936'>', IP: 127.0.0.1:12345, Execution Time: 0.316ms, Result: STRING NOT FOUND
-2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 1.133ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 0.16ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 0.323ms, Result: STRING NOT FOUND
-2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 0.137ms, Result: STRING NOT FOUND
-2025-02-19 23:28:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139917525357888'>', IP: 127.0.0.1:12345, Execution Time: 0.138ms, Result: STRING NOT FOUND
-2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.75ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.112ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.118ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.278ms, Result: STRING NOT FOUND
-2025-02-19 23:48:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140365005746912'>', IP: 127.0.0.1:12345,        Execution Time: 0.126ms, Result: STRING NOT FOUND
-2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.852ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.1ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.092ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.095ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:48:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140258727091344'>', IP: 127.0.0.1:12345,        Execution Time: 0.094ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.861ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.133ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.092ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.31ms, Result: STRING NOT FOUND
-2025-02-19 23:49:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140255674014864'>', IP: 127.0.0.1:12345,        Execution Time: 0.107ms, Result: STRING NOT FOUND
-2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.853ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.109ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.113ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.091ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:50:01, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140663046970512'>', IP: 127.0.0.1:12345,        Execution Time: 0.087ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 1.206ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 0.113ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 0.117ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 0.086ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:51:02, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140326782663456'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.856ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.223ms, Result: STRING NOT FOUND
-2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.109ms, Result: STRING NOT FOUND
-2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.123ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:51:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140253909949488'>', IP: 127.0.0.1:12345,        Execution Time: 0.091ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.762ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.108ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.288ms, Result: STRING NOT FOUND
-2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.127ms, Result: STRING NOT FOUND
-2025-02-19 23:52:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140548888055136'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: STRING NOT FOUND
-2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.941ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.138ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.107ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.107ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:52:35, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139968807982160'>', IP: 127.0.0.1:12345,        Execution Time: 0.608ms, Result: STRING NOT FOUND
-2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.799ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.096ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.085ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.103ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139981029986064'>', IP: 127.0.0.1:12345,        Execution Time: 0.134ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.774ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.094ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.115ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.087ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140532848381712'>', IP: 127.0.0.1:12345,        Execution Time: 0.09ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 1.087ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 0.337ms, Result: STRING NOT FOUND
-2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 0.141ms, Result: STRING NOT FOUND
-2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 0.118ms, Result: STRING NOT FOUND
-2025-02-19 23:53:46, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140536245851312'>', IP: 127.0.0.1:12345,        Execution Time: 0.13ms, Result: STRING NOT FOUND
-2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.865ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.1ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.134ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:53:58, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139871698260256'>', IP: 127.0.0.1:12345,        Execution Time: 0.096ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.93ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.154ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.112ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.101ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:09, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140506078796224'>', IP: 127.0.0.1:12345,        Execution Time: 0.09ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.793ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.097ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.25ms, Result: STRING NOT FOUND
-2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.122ms, Result: STRING NOT FOUND
-2025-02-19 23:54:43, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140008216629584'>', IP: 127.0.0.1:12345,        Execution Time: 0.112ms, Result: STRING NOT FOUND
-2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.881ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.129ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.104ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.097ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:54:52, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139789419582592'>', IP: 127.0.0.1:12345,        Execution Time: 0.629ms, Result: STRING NOT FOUND
-2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.728ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.1ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.147ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.104ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:55:37, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139681174032528'>', IP: 127.0.0.1:12345,        Execution Time: 0.094ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.738ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.107ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.264ms, Result: STRING NOT FOUND
-2025-02-19 23:55:50, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139908826568144'>', IP: 127.0.0.1:12345,        Execution Time: 0.136ms, Result: STRING NOT FOUND
-2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.899ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.117ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.101ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:57:41, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139737748411712'>', IP: 127.0.0.1:12345,        Execution Time: 0.099ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 1.19ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 0.399ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 0.138ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 0.123ms, Result: ERROR: FILE NOT FOUND
-2025-02-19 23:57:44, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139698724083584'>', IP: 127.0.0.1:12345,        Execution Time: 0.105ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:49:03, Query: 'adf', IP: 127.0.0.1:59714,        Execution Time: 22.195ms, Result: STRING NOT FOUND
-2025-02-21 08:49:14, Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:59714,        Execution Time: 0.02ms, Result: STRING EXISTS
-2025-02-21 08:49:20, Query: '22;0;21;16;0;19;3;0;', IP: 127.0.0.1:59714,        Execution Time: 0.023ms, Result: STRING EXISTS
-2025-02-21 08:49:22, Query: 'asdf', IP: 127.0.0.1:59714,        Execution Time: 0.021ms, Result: STRING NOT FOUND
-2025-02-21 08:55:14, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140375357724064'>', IP: 127.0.0.1:12345, Execution Time: 1.911ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:55:14, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140375357724064'>', IP: 127.0.0.1:12345, Execution Time: 0.098ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:55:14, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140375357724064'>', IP: 127.0.0.1:12345, Execution Time: 0.104ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:55:14, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140375357724064'>', IP: 127.0.0.1:12345, Execution Time: 0.09ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:55:14, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140375357724064'>', IP: 127.0.0.1:12345, Execution Time: 0.1ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:57:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140417193645136'>', IP: 127.0.0.1:12345, Execution Time: 0.795ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:57:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140417193645136'>', IP: 127.0.0.1:12345, Execution Time: 0.094ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:57:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140417193645136'>', IP: 127.0.0.1:12345, Execution Time: 0.09ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:57:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140417193645136'>', IP: 127.0.0.1:12345, Execution Time: 0.093ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 08:57:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140417193645136'>', IP: 127.0.0.1:12345, Execution Time: 0.124ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:12:36, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140451910946912'>', IP: 127.0.0.1:12345, Execution Time: 0.744ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:12:36, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140451910946912'>', IP: 127.0.0.1:12345, Execution Time: 1.683ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:12:36, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140451910946912'>', IP: 127.0.0.1:12345, Execution Time: 0.095ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:12:36, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140451910946912'>', IP: 127.0.0.1:12345, Execution Time: 0.303ms, Result: STRING NOT FOUND
-2025-02-21 09:12:36, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140451910946912'>', IP: 127.0.0.1:12345, Execution Time: 0.134ms, Result: STRING NOT FOUND
-2025-02-21 09:13:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140322764681568'>', IP: 127.0.0.1:12345, Execution Time: 0.839ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:13:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140322764681568'>', IP: 127.0.0.1:12345, Execution Time: 0.09ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:13:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140322764681568'>', IP: 127.0.0.1:12345, Execution Time: 0.105ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:13:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140322764681568'>', IP: 127.0.0.1:12345, Execution Time: 0.078ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:13:00, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140322764681568'>', IP: 127.0.0.1:12345, Execution Time: 0.137ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:13:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140201383326240'>', IP: 127.0.0.1:12345, Execution Time: 0.774ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:13:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140201383326240'>', IP: 127.0.0.1:12345, Execution Time: 0.101ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:13:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140201383326240'>', IP: 127.0.0.1:12345, Execution Time: 0.078ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:13:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140201383326240'>', IP: 127.0.0.1:12345, Execution Time: 0.079ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:13:07, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140201383326240'>', IP: 127.0.0.1:12345, Execution Time: 0.273ms, Result: STRING NOT FOUND
-2025-02-21 09:14:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139897450923344'>', IP: 127.0.0.1:12345, Execution Time: 0.712ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139897450923344'>', IP: 127.0.0.1:12345, Execution Time: 0.082ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139897450923344'>', IP: 127.0.0.1:12345, Execution Time: 0.077ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139897450923344'>', IP: 127.0.0.1:12345, Execution Time: 0.081ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:05, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139897450923344'>', IP: 127.0.0.1:12345, Execution Time: 0.262ms, Result: STRING NOT FOUND
-2025-02-21 09:14:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139717326355952'>', IP: 127.0.0.1:12345, Execution Time: 0.814ms, Result: STRING NOT FOUND
-2025-02-21 09:14:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139717326355952'>', IP: 127.0.0.1:12345, Execution Time: 0.41ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139717326355952'>', IP: 127.0.0.1:12345, Execution Time: 0.076ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139717326355952'>', IP: 127.0.0.1:12345, Execution Time: 0.098ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:10, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139717326355952'>', IP: 127.0.0.1:12345, Execution Time: 0.078ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:32, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139899099351312'>', IP: 127.0.0.1:12345, Execution Time: 0.721ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:32, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139899099351312'>', IP: 127.0.0.1:12345, Execution Time: 0.098ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:32, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139899099351312'>', IP: 127.0.0.1:12345, Execution Time: 0.092ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:32, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139899099351312'>', IP: 127.0.0.1:12345, Execution Time: 0.075ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:14:32, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139899099351312'>', IP: 127.0.0.1:12345, Execution Time: 0.084ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 09:28:44, Query: 'asdf', IP: 127.0.0.1:47908,        Execution Time: 0.446ms, Result: STRING NOT FOUND
-2025-02-21 09:28:51, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:47908,        Execution Time: 0.068ms, Result: STRING EXISTS
-2025-02-21 09:28:52, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:47908,        Execution Time: 0.016ms, Result: STRING EXISTS
-2025-02-21 09:28:53, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:47908,        Execution Time: 0.025ms, Result: STRING EXISTS
-2025-02-21 09:28:53, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:47908,        Execution Time: 0.026ms, Result: STRING EXISTS
-2025-02-21 09:28:54, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:47908,        Execution Time: 0.024ms, Result: STRING EXISTS
-2025-02-21 09:45:29, Query: 'dsf', IP: 127.0.0.1:48176,        Execution Time: 0.065ms, Result: STRING NOT FOUND
-2025-02-21 09:45:30, Query: 'asd', IP: 127.0.0.1:48176,        Execution Time: 0.072ms, Result: STRING NOT FOUND
-2025-02-21 10:16:11, Query: 'adsf', IP: 127.0.0.1:38074,        Execution Time: 29.879ms, Result: STRING NOT FOUND
-2025-02-21 10:24:04, Query: 'gf', IP: 127.0.0.1:60502,        Execution Time: 17.595ms, Result: STRING NOT FOUND
-2025-02-21 10:24:08, Query: 'hgh', IP: 127.0.0.1:60502,        Execution Time: 17.152ms, Result: STRING NOT FOUND
-2025-02-21 10:24:17, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:60502,        Execution Time: 0.075ms, Result: STRING EXISTS
-2025-02-21 10:24:21, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:60502,        Execution Time: 0.064ms, Result: STRING EXISTS
-2025-02-21 10:24:37, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:60502,        Execution Time: 0.065ms, Result: STRING EXISTS
-2025-02-21 10:24:56, Query: '4;0;1;11;0;8;5;', IP: 127.0.0.1:60502,        Execution Time: 16.069ms, Result: STRING NOT FOUND
-2025-02-21 10:25:04, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:60502,        Execution Time: 0.104ms, Result: STRING EXISTS
-2025-02-21 10:25:20, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:60502,        Execution Time: 0.117ms, Result: STRING EXISTS
-2025-02-21 10:25:22, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:60502,        Execution Time: 0.108ms, Result: STRING EXISTS
-2025-02-21 10:25:34, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:60502,        Execution Time: 0.101ms, Result: STRING EXISTS
-2025-02-21 10:26:51, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:60644,        Execution Time: 0.076ms, Result: STRING EXISTS
-2025-02-21 10:26:58, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:60644,        Execution Time: 0.109ms, Result: STRING EXISTS
-2025-02-21 10:32:40, Query: 'jhj', IP: 127.0.0.1:53946,        Execution Time: 29.49ms, Result: STRING NOT FOUND
-2025-02-21 10:32:53, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:53946,        Execution Time: 0.017ms, Result: STRING EXISTS
-2025-02-21 10:34:04, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:49918,        Execution Time: 0.014ms, Result: STRING EXISTS
-2025-02-21 10:34:21, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:49918,        Execution Time: 0.014ms, Result: STRING EXISTS
-2025-02-21 10:34:23, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:49918,        Execution Time: 0.021ms, Result: STRING EXISTS
-2025-02-21 10:49:20, Query: 'asdf', IP: 127.0.0.1:41528,        Execution Time: 31.132ms, Result: STRING NOT FOUND
-2025-02-21 11:12:00, Query: 'ewr', IP: 127.0.0.1:51438,        Execution Time: 29.474ms, Result: STRING NOT FOUND
-2025-02-21 11:12:07, Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:51438,        Execution Time: 0.015ms, Result: STRING EXISTS
-2025-02-21 11:12:52, Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:51438,        Execution Time: 0.014ms, Result: STRING EXISTS
-2025-02-21 11:12:56, Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:51438,        Execution Time: 0.019ms, Result: STRING EXISTS
-2025-02-21 11:13:01, Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:51438,        Execution Time: 0.026ms, Result: STRING EXISTS
-2025-02-21 12:42:19, Query: 'h', IP: 127.0.0.1:35296,        Execution Time: 26.736ms, Result: STRING NOT FOUND
-2025-02-21 12:42:21, Query: 'hrth', IP: 127.0.0.1:35296,        Execution Time: 0.022ms, Result: STRING NOT FOUND
-2025-02-21 12:42:38, Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:35296,        Execution Time: 0.016ms, Result: STRING EXISTS
-2025-02-21 12:42:39, Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:35296,        Execution Time: 0.016ms, Result: STRING EXISTS
-2025-02-21 12:42:41, Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:35296,        Execution Time: 0.022ms, Result: STRING EXISTS
-2025-02-21 12:42:43, Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:35296,        Execution Time: 0.021ms, Result: STRING EXISTS
-2025-02-21 12:42:44, Query: 'hg', IP: 127.0.0.1:35296,        Execution Time: 0.02ms, Result: STRING NOT FOUND
-2025-02-21 13:03:15, Query: 'asdf', IP: 127.0.0.1:39762, Execution Time: 28.528ms, Result: STRING NOT FOUND
-2025-02-21 13:32:30, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140051294068000'>', IP: 127.0.0.1:12345, Execution Time: 0.576ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:32:30, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140051294068000'>', IP: 127.0.0.1:12345, Execution Time: 0.081ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:32:30, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140051294068000'>', IP: 127.0.0.1:12345, Execution Time: 0.087ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:32:30, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140051294068000'>', IP: 127.0.0.1:12345, Execution Time: 0.078ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:32:30, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140051294068000'>', IP: 127.0.0.1:12345, Execution Time: 0.08ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:34:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140025342810320'>', IP: 127.0.0.1:12345, Execution Time: 0.478ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:34:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140025342810320'>', IP: 127.0.0.1:12345, Execution Time: 0.079ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:34:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140025342810320'>', IP: 127.0.0.1:12345, Execution Time: 0.069ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:34:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140025342810320'>', IP: 127.0.0.1:12345, Execution Time: 0.067ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:34:48, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='140025342810320'>', IP: 127.0.0.1:12345, Execution Time: 0.068ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:35:20, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139913449085280'>', IP: 127.0.0.1:12345, Execution Time: 0.443ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:35:20, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139913449085280'>', IP: 127.0.0.1:12345, Execution Time: 0.076ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:35:20, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139913449085280'>', IP: 127.0.0.1:12345, Execution Time: 0.075ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:35:20, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139913449085280'>', IP: 127.0.0.1:12345, Execution Time: 0.066ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 13:35:20, Query: '<MagicMock name='create_default_context().wrap_socket().recv().decode().strip()' id='139913449085280'>', IP: 127.0.0.1:12345, Execution Time: 0.065ms, Result: ERROR: FILE NOT FOUND
-2025-02-21 14:43:17, Query: '11;0;1;11;0;5;4;0;', IP: 127.0.0.1:50724, Execution Time: 20.664ms, Result: STRING EXISTS
-2025-02-21 14:43:19, Query: '11;0;1;11;0;5;4;0;', IP: 127.0.0.1:50724, Execution Time: 0.012ms, Result: STRING EXISTS
-2025-02-21 14:43:20, Query: '11;0;1;11;0;5;4;0;', IP: 127.0.0.1:50724, Execution Time: 0.014ms, Result: STRING EXISTS
-2025-02-21 14:43:21, Query: '11;0;1;11;0;5;4;0;', IP: 127.0.0.1:50724, Execution Time: 0.012ms, Result: STRING EXISTS
-2025-02-21 14:43:21, Query: '11;0;1;11;0;5;4;0;', IP: 127.0.0.1:50724, Execution Time: 0.022ms, Result: STRING EXISTS
-2025-02-21 18:33:30, Query: 'https://1drv.ms/w/c/1ebc9ad4cadd609c/EV52J4TaK65ClTQm-khMRrYBYzURLK4xMdf_MTYlLDfEIQ?e=NFQawM', IP: 127.0.0.1:39514,        Execution Time: 24.796ms, Result: STRING NOT FOUND
-2025-02-21 18:33:48, Query: '11;0;1;26;0;7;5;0;', IP: 127.0.0.1:39514,        Execution Time: 0.014ms, Result: STRING EXISTS
+2025-02-24 13:58:30,466 - Query: 'adf', IP: 127.0.0.1:56632, Execution Time: 0.027ms, Result: STRING NOT FOUND
+2025-02-24 13:58:32,734 - Query: 'asdf', IP: 127.0.0.1:56632, Execution Time: 0.028ms, Result: STRING NOT FOUND
+2025-02-24 13:58:43,069 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.019ms, Result: STRING EXISTS
+2025-02-24 13:58:45,737 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.023ms, Result: STRING EXISTS
+2025-02-24 14:00:29,655 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.023ms, Result: STRING EXISTS
+2025-02-24 14:00:30,857 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.018ms, Result: STRING EXISTS
+2025-02-24 14:00:31,008 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.03ms, Result: STRING EXISTS
+2025-02-24 14:00:31,130 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.029ms, Result: STRING EXISTS
+2025-02-24 14:00:31,394 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.024ms, Result: STRING EXISTS
+2025-02-24 14:00:57,446 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.027ms, Result: STRING EXISTS
+2025-02-24 14:00:57,912 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.026ms, Result: STRING EXISTS
+2025-02-24 14:00:58,106 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.016ms, Result: STRING EXISTS
+2025-02-24 14:00:58,219 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.022ms, Result: STRING EXISTS
+2025-02-24 14:00:59,899 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:56632, Execution Time: 0.02ms, Result: STRING EXISTS
+2025-02-24 14:03:29,057 - Query: '10;0;6;28;0;23;5;0;', IP: 127.0.0.1:38266, Execution Time: 0.019ms, Result: STRING EXISTS
+2025-02-24 14:05:40,414 - Query: 'jhhjg', IP: 127.0.0.1:32792, Execution Time: 0.026ms, Result: STRING NOT FOUND
+2025-02-24 14:05:43,194 - Query: 'jgf', IP: 127.0.0.1:32792, Execution Time: 0.026ms, Result: STRING NOT FOUND
+2025-02-24 14:33:37,399 - Query: 'test_string', IP: 127.0.0.1:40560, Execution Time: 0.022ms, Result: STRING NOT FOUND
+2025-02-24 14:33:38,454 - Query: 'test_string', IP: 127.0.0.1:40572, Execution Time: 0.012ms, Result: STRING NOT FOUND
+2025-02-24 14:33:39,513 - Query: 'test_string', IP: 127.0.0.1:40574, Execution Time: 0.015ms, Result: STRING NOT FOUND
+2025-02-24 14:33:40,570 - Query: 'test_string', IP: 127.0.0.1:40576, Execution Time: 0.013ms, Result: STRING NOT FOUND
+2025-02-24 14:33:41,622 - Query: 'test_string', IP: 127.0.0.1:40588, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 14:34:11,994 - Query: 'test_string', IP: 127.0.0.1:33214, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 14:34:13,048 - Query: 'test_string', IP: 127.0.0.1:33218, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 14:34:14,101 - Query: 'test_string', IP: 127.0.0.1:33220, Execution Time: 0.013ms, Result: STRING NOT FOUND
+2025-02-24 14:34:15,148 - Query: 'test_string', IP: 127.0.0.1:39504, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 14:34:16,200 - Query: 'test_string', IP: 127.0.0.1:39516, Execution Time: 0.016ms, Result: STRING NOT FOUND
+2025-02-24 14:39:45,594 - Query: 'test_string', IP: 127.0.0.1:50034, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 14:39:46,649 - Query: 'test_string', IP: 127.0.0.1:50046, Execution Time: 0.017ms, Result: STRING NOT FOUND
+2025-02-24 14:39:47,704 - Query: 'test_string', IP: 127.0.0.1:50048, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 14:39:48,753 - Query: 'test_string', IP: 127.0.0.1:50060, Execution Time: 0.014ms, Result: STRING NOT FOUND
+2025-02-24 14:39:49,806 - Query: 'test_string', IP: 127.0.0.1:50066, Execution Time: 0.015ms, Result: STRING NOT FOUND
+2025-02-24 14:42:33,757 - 
+Server shutting down gracefully...
+2025-02-24 14:42:46,398 - New connection from ('127.0.0.1', 48624)
+2025-02-24 14:42:46,398 - Query: 'test_string', IP: 127.0.0.1:48624, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 14:42:47,451 - New connection from ('127.0.0.1', 48636)
+2025-02-24 14:42:47,451 - Query: 'test_string', IP: 127.0.0.1:48636, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 14:42:48,504 - New connection from ('127.0.0.1', 48652)
+2025-02-24 14:42:48,504 - Query: 'test_string', IP: 127.0.0.1:48652, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 14:42:49,553 - New connection from ('127.0.0.1', 48662)
+2025-02-24 14:42:49,553 - Query: 'test_string', IP: 127.0.0.1:48662, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 14:42:50,602 - New connection from ('127.0.0.1', 48664)
+2025-02-24 14:42:50,602 - Query: 'test_string', IP: 127.0.0.1:48664, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 14:42:51,651 - New connection from ('127.0.0.1', 48672)
+2025-02-24 14:42:52,701 - New connection from ('127.0.0.1', 48678)
+2025-02-24 14:42:53,751 - New connection from ('127.0.0.1', 55516)
+2025-02-24 14:43:13,916 - 
+Server shutting down gracefully...
+2025-02-24 14:43:24,047 - New connection from ('127.0.0.1', 49316)
+2025-02-24 14:43:25,767 - Query: 'asdf', IP: 127.0.0.1:49316, Execution Time: 0.034ms, Result: STRING NOT FOUND
+2025-02-24 14:43:27,123 - Query: 'asdf', IP: 127.0.0.1:49316, Execution Time: 0.018ms, Result: STRING NOT FOUND
+2025-02-24 14:49:07,154 - 
+Server shutting down gracefully...
+2025-02-24 15:01:32,249 - New connection from ('127.0.0.1', 57992)
+2025-02-24 15:01:32,249 - Query: 'test_string', IP: 127.0.0.1:57992, Execution Time: 0.012ms, Result: STRING NOT FOUND
+2025-02-24 15:01:33,298 - New connection from ('127.0.0.1', 58004)
+2025-02-24 15:01:33,298 - Query: 'test_string', IP: 127.0.0.1:58004, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 15:01:34,347 - New connection from ('127.0.0.1', 58020)
+2025-02-24 15:01:34,347 - Query: 'test_string', IP: 127.0.0.1:58020, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 15:01:35,398 - New connection from ('127.0.0.1', 58026)
+2025-02-24 15:01:35,398 - Query: 'test_string', IP: 127.0.0.1:58026, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 15:01:36,448 - New connection from ('127.0.0.1', 58042)
+2025-02-24 15:01:36,448 - Query: 'test_string', IP: 127.0.0.1:58042, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 15:01:37,498 - New connection from ('127.0.0.1', 58044)
+2025-02-24 15:01:38,553 - New connection from ('127.0.0.1', 58050)
+2025-02-24 15:01:39,611 - New connection from ('127.0.0.1', 58056)
+2025-02-24 15:01:45,366 - 
+Server shutting down gracefully...
+2025-02-24 15:04:16,770 - New connection from ('127.0.0.1', 54234)
+2025-02-24 15:04:16,770 - Query: 'test_string', IP: 127.0.0.1:54234, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 15:04:17,823 - New connection from ('127.0.0.1', 54236)
+2025-02-24 15:04:17,824 - Query: 'test_string', IP: 127.0.0.1:54236, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 15:04:18,878 - New connection from ('127.0.0.1', 54248)
+2025-02-24 15:04:18,878 - Query: 'test_string', IP: 127.0.0.1:54248, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 15:04:19,939 - New connection from ('127.0.0.1', 54588)
+2025-02-24 15:04:19,939 - Query: 'test_string', IP: 127.0.0.1:54588, Execution Time: 0.014ms, Result: STRING NOT FOUND
+2025-02-24 15:04:20,994 - New connection from ('127.0.0.1', 54602)
+2025-02-24 15:04:20,994 - Query: 'test_string', IP: 127.0.0.1:54602, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 15:04:22,046 - New connection from ('127.0.0.1', 54608)
+2025-02-24 15:04:23,093 - New connection from ('127.0.0.1', 54618)
+2025-02-24 15:04:24,143 - New connection from ('127.0.0.1', 54628)
+2025-02-24 15:05:40,288 - 
+Server shutting down gracefully...
+2025-02-24 15:06:28,444 - New connection from ('127.0.0.1', 44490)
+2025-02-24 15:06:30,172 - Query: 'asdf', IP: 127.0.0.1:44490, Execution Time: 0.022ms, Result: STRING NOT FOUND
+2025-02-24 15:06:30,710 - Query: 'asdf', IP: 127.0.0.1:44490, Execution Time: 0.02ms, Result: STRING NOT FOUND
+2025-02-24 15:06:36,062 - Query: '18;0;6;28;0;24;5;0;', IP: 127.0.0.1:44490, Execution Time: 0.031ms, Result: STRING EXISTS
+2025-02-24 15:06:36,717 - Query: '18;0;6;28;0;24;5;0;', IP: 127.0.0.1:44490, Execution Time: 0.02ms, Result: STRING EXISTS
+2025-02-24 15:06:37,386 - Query: '18;0;6;28;0;24;5;0;', IP: 127.0.0.1:44490, Execution Time: 0.021ms, Result: STRING EXISTS
+2025-02-24 15:06:40,287 - Query: '18;0;6;28;0;24;5;0;', IP: 127.0.0.1:44490, Execution Time: 0.02ms, Result: STRING EXISTS
+2025-02-24 15:06:40,811 - Query: '18;0;6;28;0;24;5;0;', IP: 127.0.0.1:44490, Execution Time: 0.017ms, Result: STRING EXISTS
+2025-02-24 15:06:46,183 - Query: '18;0;6;28;0;24;5;0;', IP: 127.0.0.1:44490, Execution Time: 0.016ms, Result: STRING EXISTS
+2025-02-24 15:07:50,466 - Unexpected error with client ('127.0.0.1', 44490): The read operation timed out
+2025-02-24 15:10:38,270 - 
+Server shutting down gracefully...
+2025-02-24 15:12:28,218 - 
+Server shutting down gracefully...
+2025-02-24 16:10:27,923 - New connection from ('127.0.0.1', 40640)
+2025-02-24 16:10:27,923 - Query: 'test_string', IP: 127.0.0.1:40640, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:10:28,975 - New connection from ('127.0.0.1', 40642)
+2025-02-24 16:10:28,975 - Query: 'test_string', IP: 127.0.0.1:40642, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:10:30,025 - New connection from ('127.0.0.1', 40648)
+2025-02-24 16:10:30,025 - Query: 'test_string', IP: 127.0.0.1:40648, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 16:10:31,074 - New connection from ('127.0.0.1', 40658)
+2025-02-24 16:10:31,075 - Query: 'test_string', IP: 127.0.0.1:40658, Execution Time: 0.013ms, Result: STRING NOT FOUND
+2025-02-24 16:10:32,126 - New connection from ('127.0.0.1', 40662)
+2025-02-24 16:10:32,126 - Query: 'test_string', IP: 127.0.0.1:40662, Execution Time: 0.025ms, Result: STRING NOT FOUND
+2025-02-24 16:10:33,185 - New connection from ('127.0.0.1', 40674)
+2025-02-24 16:10:34,235 - New connection from ('127.0.0.1', 40686)
+2025-02-24 16:10:35,285 - New connection from ('127.0.0.1', 40696)
+2025-02-24 16:12:30,471 - New connection from ('127.0.0.1', 37520)
+2025-02-24 16:12:30,471 - Query: 'test_string', IP: 127.0.0.1:37520, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:12:31,523 - New connection from ('127.0.0.1', 37522)
+2025-02-24 16:12:31,523 - Query: 'test_string', IP: 127.0.0.1:37522, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 16:12:32,584 - New connection from ('127.0.0.1', 37532)
+2025-02-24 16:12:32,584 - Query: 'test_string', IP: 127.0.0.1:37532, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 16:12:33,636 - New connection from ('127.0.0.1', 37548)
+2025-02-24 16:12:33,636 - Query: 'test_string', IP: 127.0.0.1:37548, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 16:12:34,695 - New connection from ('127.0.0.1', 37560)
+2025-02-24 16:12:34,695 - Query: 'test_string', IP: 127.0.0.1:37560, Execution Time: 0.014ms, Result: STRING NOT FOUND
+2025-02-24 16:12:35,741 - New connection from ('127.0.0.1', 50146)
+2025-02-24 16:12:36,791 - New connection from ('127.0.0.1', 50148)
+2025-02-24 16:12:37,844 - New connection from ('127.0.0.1', 50156)
+2025-02-24 16:14:10,353 - New connection from ('127.0.0.1', 45360)
+2025-02-24 16:14:10,354 - Query: 'test_string', IP: 127.0.0.1:45360, Execution Time: 0.014ms, Result: STRING NOT FOUND
+2025-02-24 16:14:13,541 - New connection from ('127.0.0.1', 45364)
+2025-02-24 16:14:13,542 - Query: 'test_string', IP: 127.0.0.1:45364, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:14:14,601 - New connection from ('127.0.0.1', 45366)
+2025-02-24 16:14:14,601 - Query: 'test_string', IP: 127.0.0.1:45366, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 16:14:15,652 - New connection from ('127.0.0.1', 45382)
+2025-02-24 16:14:15,652 - Query: 'test_string', IP: 127.0.0.1:45382, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:14:16,704 - New connection from ('127.0.0.1', 45386)
+2025-02-24 16:14:16,704 - Query: 'test_string', IP: 127.0.0.1:45386, Execution Time: 0.012ms, Result: STRING NOT FOUND
+2025-02-24 16:14:17,754 - New connection from ('127.0.0.1', 45398)
+2025-02-24 16:14:18,803 - New connection from ('127.0.0.1', 45414)
+2025-02-24 16:14:19,854 - New connection from ('127.0.0.1', 45426)
+2025-02-24 16:14:35,627 - New connection from ('127.0.0.1', 34452)
+2025-02-24 16:14:35,627 - Query: 'test_string', IP: 127.0.0.1:34452, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 16:14:36,682 - New connection from ('127.0.0.1', 34454)
+2025-02-24 16:14:36,682 - Query: 'test_string', IP: 127.0.0.1:34454, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:14:37,731 - New connection from ('127.0.0.1', 34460)
+2025-02-24 16:14:37,732 - Query: 'test_string', IP: 127.0.0.1:34460, Execution Time: 0.012ms, Result: STRING NOT FOUND
+2025-02-24 16:14:38,791 - New connection from ('127.0.0.1', 34470)
+2025-02-24 16:14:38,791 - Query: 'test_string', IP: 127.0.0.1:34470, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:14:39,842 - New connection from ('127.0.0.1', 34480)
+2025-02-24 16:14:39,843 - Query: 'test_string', IP: 127.0.0.1:34480, Execution Time: 0.013ms, Result: STRING NOT FOUND
+2025-02-24 16:14:40,892 - New connection from ('127.0.0.1', 34486)
+2025-02-24 16:14:41,941 - New connection from ('127.0.0.1', 50674)
+2025-02-24 16:14:42,991 - New connection from ('127.0.0.1', 50690)
+2025-02-24 16:17:13,915 - New connection from ('127.0.0.1', 39986)
+2025-02-24 16:17:13,915 - Query: 'test_string', IP: 127.0.0.1:39986, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 16:17:14,971 - New connection from ('127.0.0.1', 39996)
+2025-02-24 16:17:14,971 - Query: 'test_string', IP: 127.0.0.1:39996, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:17:16,023 - New connection from ('127.0.0.1', 40008)
+2025-02-24 16:17:16,023 - Query: 'test_string', IP: 127.0.0.1:40008, Execution Time: 0.012ms, Result: STRING NOT FOUND
+2025-02-24 16:17:17,071 - New connection from ('127.0.0.1', 40018)
+2025-02-24 16:17:17,071 - Query: 'test_string', IP: 127.0.0.1:40018, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:17:18,125 - New connection from ('127.0.0.1', 40026)
+2025-02-24 16:17:18,125 - Query: 'test_string', IP: 127.0.0.1:40026, Execution Time: 0.012ms, Result: STRING NOT FOUND
+2025-02-24 16:17:19,174 - New connection from ('127.0.0.1', 40032)
+2025-02-24 16:17:20,225 - New connection from ('127.0.0.1', 40048)
+2025-02-24 16:17:21,273 - New connection from ('127.0.0.1', 40060)
+2025-02-24 16:25:32,182 - 
+Server shutting down gracefully...
+2025-02-24 16:25:33,529 - Server is listening on 0.0.0.0:44445...
+2025-02-24 16:25:39,988 - New connection from ('127.0.0.1', 41638)
+2025-02-24 16:25:40,991 - New connection from ('127.0.0.1', 41640)
+2025-02-24 16:25:41,993 - New connection from ('127.0.0.1', 41648)
+2025-02-24 16:25:42,996 - New connection from ('127.0.0.1', 44280)
+2025-02-24 16:25:43,999 - New connection from ('127.0.0.1', 44290)
+2025-02-24 16:25:45,001 - New connection from ('127.0.0.1', 44294)
+2025-02-24 16:25:46,004 - New connection from ('127.0.0.1', 44308)
+2025-02-24 16:25:47,007 - New connection from ('127.0.0.1', 44324)
+2025-02-24 16:25:54,337 - New connection from ('127.0.0.1', 53126)
+2025-02-24 16:25:55,341 - New connection from ('127.0.0.1', 53134)
+2025-02-24 16:25:56,344 - New connection from ('127.0.0.1', 53138)
+2025-02-24 16:25:57,346 - New connection from ('127.0.0.1', 53142)
+2025-02-24 16:25:57,898 - Server shutting down gracefully...
+2025-02-24 16:26:01,476 - Server is listening on 0.0.0.0:44445...
+2025-02-24 16:26:04,309 - New connection from ('127.0.0.1', 35992)
+2025-02-24 16:26:05,311 - New connection from ('127.0.0.1', 35998)
+2025-02-24 16:26:06,314 - New connection from ('127.0.0.1', 36000)
+2025-02-24 16:26:07,317 - New connection from ('127.0.0.1', 36010)
+2025-02-24 16:26:08,320 - New connection from ('127.0.0.1', 36014)
+2025-02-24 16:26:09,323 - New connection from ('127.0.0.1', 36028)
+2025-02-24 16:26:10,327 - New connection from ('127.0.0.1', 36038)
+2025-02-24 16:26:13,386 - New connection from ('127.0.0.1', 36046)
+2025-02-24 16:26:13,978 - Server shutting down gracefully...
+2025-02-24 16:26:17,671 - Server is listening on 0.0.0.0:44445...
+2025-02-24 16:26:19,440 - New connection from ('127.0.0.1', 39766)
+2025-02-24 16:26:20,443 - New connection from ('127.0.0.1', 39774)
+2025-02-24 16:26:35,495 - Server shutting down gracefully...
+2025-02-24 16:26:36,722 - Server is listening on 0.0.0.0:44445...
+2025-02-24 16:26:38,751 - New connection from ('127.0.0.1', 50982)
+2025-02-24 16:26:39,754 - New connection from ('127.0.0.1', 50994)
+2025-02-24 16:26:44,316 - Server shutting down gracefully...
+2025-02-24 16:26:51,525 - Server is listening on 0.0.0.0:44445...
+2025-02-24 16:26:53,698 - New connection from ('127.0.0.1', 48856)
+2025-02-24 16:26:54,701 - New connection from ('127.0.0.1', 48866)
+2025-02-24 16:26:55,704 - New connection from ('127.0.0.1', 48878)
+2025-02-24 16:26:55,766 - Server shutting down gracefully...
+2025-02-24 16:27:04,563 - New connection from ('127.0.0.1', 52434)
+2025-02-24 16:27:04,563 - Query: 'test_string', IP: 127.0.0.1:52434, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 16:27:05,622 - New connection from ('127.0.0.1', 52442)
+2025-02-24 16:27:05,622 - Query: 'test_string', IP: 127.0.0.1:52442, Execution Time: 0.022ms, Result: STRING NOT FOUND
+2025-02-24 16:27:06,671 - New connection from ('127.0.0.1', 52448)
+2025-02-24 16:27:06,672 - Query: 'test_string', IP: 127.0.0.1:52448, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:27:07,718 - New connection from ('127.0.0.1', 54942)
+2025-02-24 16:27:07,719 - Query: 'test_string', IP: 127.0.0.1:54942, Execution Time: 0.021ms, Result: STRING NOT FOUND
+2025-02-24 16:27:08,768 - New connection from ('127.0.0.1', 54952)
+2025-02-24 16:27:08,768 - Query: 'test_string', IP: 127.0.0.1:54952, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:27:09,757 - 
+Server shutting down gracefully...
+2025-02-24 16:29:37,133 - New connection from ('127.0.0.1', 54338)
+2025-02-24 16:29:42,129 - Query: 'asdf', IP: 127.0.0.1:54338, Execution Time: 0.026ms, Result: STRING NOT FOUND
+2025-02-24 16:29:43,521 - Query: 'aa', IP: 127.0.0.1:54338, Execution Time: 0.026ms, Result: STRING NOT FOUND
+2025-02-24 16:29:43,845 - Query: 'dfasdf', IP: 127.0.0.1:54338, Execution Time: 0.017ms, Result: STRING NOT FOUND
+2025-02-24 16:29:44,063 - Query: 'asd', IP: 127.0.0.1:54338, Execution Time: 0.016ms, Result: STRING NOT FOUND
+2025-02-24 16:29:44,255 - Query: 'fas', IP: 127.0.0.1:54338, Execution Time: 0.018ms, Result: STRING NOT FOUND
+2025-02-24 16:29:54,500 - Query: '21;0;1;28;0;24;4;0;', IP: 127.0.0.1:54338, Execution Time: 0.022ms, Result: STRING EXISTS
+2025-02-24 16:29:55,692 - Query: '21;0;1;28;0;24;4;0;', IP: 127.0.0.1:54338, Execution Time: 0.021ms, Result: STRING EXISTS
+2025-02-24 16:29:56,574 - Query: '21;0;1;28;0;24;4;0;', IP: 127.0.0.1:54338, Execution Time: 0.017ms, Result: STRING EXISTS
+2025-02-24 16:29:57,451 - Query: '21;0;1;28;0;24;4;0;', IP: 127.0.0.1:54338, Execution Time: 0.017ms, Result: STRING EXISTS
+2025-02-24 16:29:58,457 - Query: '21;0;1;28;0;24;4;0;', IP: 127.0.0.1:54338, Execution Time: 0.017ms, Result: STRING EXISTS
+2025-02-24 16:30:15,037 - 
+Server shutting down gracefully...
+2025-02-24 16:30:39,619 - Server is listening on 0.0.0.0:44445...
+2025-02-24 16:30:44,016 - New connection from ('127.0.0.1', 34892)
+2025-02-24 16:30:45,036 - New connection from ('127.0.0.1', 34904)
+2025-02-24 16:30:46,046 - New connection from ('127.0.0.1', 34918)
+2025-02-24 16:30:49,148 - New connection from ('127.0.0.1', 34928)
+2025-02-24 16:31:07,345 - Server shutting down gracefully...
+2025-02-24 16:31:10,488 - New connection from ('127.0.0.1', 50854)
+2025-02-24 16:31:10,488 - Query: 'test_string', IP: 127.0.0.1:50854, Execution Time: 0.02ms, Result: STRING NOT FOUND
+2025-02-24 16:31:11,544 - New connection from ('127.0.0.1', 50864)
+2025-02-24 16:31:11,544 - Query: 'test_string', IP: 127.0.0.1:50864, Execution Time: 0.014ms, Result: STRING NOT FOUND
+2025-02-24 16:31:12,604 - New connection from ('127.0.0.1', 37340)
+2025-02-24 16:31:12,604 - Query: 'test_string', IP: 127.0.0.1:37340, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 16:31:13,658 - New connection from ('127.0.0.1', 37344)
+2025-02-24 16:31:13,658 - Query: 'test_string', IP: 127.0.0.1:37344, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:31:14,708 - New connection from ('127.0.0.1', 37360)
+2025-02-24 16:31:14,708 - Query: 'test_string', IP: 127.0.0.1:37360, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:31:15,773 - New connection from ('127.0.0.1', 37372)
+2025-02-24 16:31:16,835 - New connection from ('127.0.0.1', 37374)
+2025-02-24 16:31:17,908 - New connection from ('127.0.0.1', 37380)
+2025-02-24 16:31:47,940 - New connection from ('127.0.0.1', 53820)
+2025-02-24 16:31:47,940 - Query: 'test_string', IP: 127.0.0.1:53820, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 16:31:48,994 - New connection from ('127.0.0.1', 53824)
+2025-02-24 16:31:48,994 - Query: 'test_string', IP: 127.0.0.1:53824, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 16:31:50,045 - New connection from ('127.0.0.1', 53834)
+2025-02-24 16:31:50,046 - Query: 'test_string', IP: 127.0.0.1:53834, Execution Time: 0.012ms, Result: STRING NOT FOUND
+2025-02-24 16:31:51,096 - New connection from ('127.0.0.1', 53844)
+2025-02-24 16:31:51,096 - Query: 'test_string', IP: 127.0.0.1:53844, Execution Time: 0.012ms, Result: STRING NOT FOUND
+2025-02-24 16:31:52,159 - New connection from ('127.0.0.1', 53856)
+2025-02-24 16:31:52,159 - Query: 'test_string', IP: 127.0.0.1:53856, Execution Time: 0.015ms, Result: STRING NOT FOUND
+2025-02-24 16:31:53,216 - New connection from ('127.0.0.1', 53872)
+2025-02-24 16:31:54,270 - New connection from ('127.0.0.1', 41190)
+2025-02-24 16:31:57,420 - New connection from ('127.0.0.1', 41198)
+2025-02-24 16:32:24,676 - 
+Server shutting down gracefully...
+2025-02-24 17:43:06,389 - New connection from ('127.0.0.1', 54828)
+2025-02-24 17:43:06,389 - Query: 'test_string', IP: 127.0.0.1:54828, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 17:43:07,444 - New connection from ('127.0.0.1', 54840)
+2025-02-24 17:43:07,444 - Query: 'test_string', IP: 127.0.0.1:54840, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 17:43:08,493 - New connection from ('127.0.0.1', 56570)
+2025-02-24 17:43:08,493 - Query: 'test_string', IP: 127.0.0.1:56570, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 17:43:09,541 - New connection from ('127.0.0.1', 56582)
+2025-02-24 17:43:09,541 - Query: 'test_string', IP: 127.0.0.1:56582, Execution Time: 0.012ms, Result: STRING NOT FOUND
+2025-02-24 17:43:10,591 - New connection from ('127.0.0.1', 56594)
+2025-02-24 17:43:10,591 - Query: 'test_string', IP: 127.0.0.1:56594, Execution Time: 0.011ms, Result: STRING NOT FOUND
+2025-02-24 17:43:11,645 - New connection from ('127.0.0.1', 56598)
+2025-02-24 17:43:12,706 - New connection from ('127.0.0.1', 56610)
+2025-02-24 17:43:13,764 - New connection from ('127.0.0.1', 56612)
+2025-02-24 17:45:56,338 - 
+Server shutting down gracefully...
+2025-02-24 17:46:06,706 - New connection from ('127.0.0.1', 50094)
+2025-02-24 17:46:11,621 - Query: '11;0;1;26;0;7;5;0;', IP: 127.0.0.1:50094, Execution Time: 0.022ms, Result: STRING EXISTS
+2025-02-24 17:46:13,334 - Query: 'asdf', IP: 127.0.0.1:50094, Execution Time: 0.025ms, Result: STRING NOT FOUND
+2025-02-24 17:46:13,952 - Query: 'asdf', IP: 127.0.0.1:50094, Execution Time: 0.02ms, Result: STRING NOT FOUND
+2025-02-24 17:46:26,465 - Query: 'asdf', IP: 127.0.0.1:50094, Execution Time: 0.024ms, Result: STRING NOT FOUND
+2025-02-24 17:46:50,620 - New connection from ('127.0.0.1', 42712)
+2025-02-24 17:46:50,621 - Query: 'test_string', IP: 127.0.0.1:42712, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 17:46:51,669 - New connection from ('127.0.0.1', 45510)
+2025-02-24 17:46:51,669 - Query: 'test_string', IP: 127.0.0.1:45510, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 17:46:52,720 - New connection from ('127.0.0.1', 45526)
+2025-02-24 17:46:52,720 - Query: 'test_string', IP: 127.0.0.1:45526, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 17:46:53,769 - New connection from ('127.0.0.1', 45540)
+2025-02-24 17:46:53,769 - Query: 'test_string', IP: 127.0.0.1:45540, Execution Time: 0.009ms, Result: STRING NOT FOUND
+2025-02-24 17:46:54,825 - New connection from ('127.0.0.1', 45550)
+2025-02-24 17:46:54,825 - Query: 'test_string', IP: 127.0.0.1:45550, Execution Time: 0.01ms, Result: STRING NOT FOUND
+2025-02-24 17:46:55,881 - New connection from ('127.0.0.1', 45566)
+2025-02-24 17:46:59,097 - New connection from ('127.0.0.1', 45572)
+2025-02-24 17:47:00,146 - New connection from ('127.0.0.1', 45578)
+2025-02-24 17:47:14,594 - 
+Server shutting down gracefully...
+2025-02-24 17:53:09,209 - New connection from ('127.0.0.1', 53496)
+2025-02-24 17:53:24,199 - 
+Server shutting down gracefully...
+2025-02-24 17:53:39,862 - New connection from ('127.0.0.1', 34320)
+2025-02-24 17:53:47,740 - Unexpected error with client ('127.0.0.1', 34320): signal only works in main thread of the main interpreter
+2025-02-24 17:54:05,326 - New connection from ('127.0.0.1', 55956)
+2025-02-24 17:54:06,592 - Unexpected error with client ('127.0.0.1', 55956): signal only works in main thread of the main interpreter
+2025-02-24 17:54:41,053 - 
+Server shutting down gracefully...
+2025-02-24 17:58:24,795 - New connection from ('127.0.0.1', 39896)
+2025-02-24 17:58:30,686 - Query: 'adf', IP: 127.0.0.1:39896, Execution Time: 0.521ms, Result: STRING NOT FOUND
+2025-02-24 17:58:36,137 - Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:39896, Execution Time: 0.211ms, Result: STRING EXISTS
+2025-02-24 17:58:37,299 - Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:39896, Execution Time: 0.216ms, Result: STRING EXISTS
+2025-02-24 17:58:38,426 - Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:39896, Execution Time: 0.372ms, Result: STRING EXISTS
+2025-02-24 17:58:39,046 - Query: '4;0;1;11;0;8;5;0;', IP: 127.0.0.1:39896, Execution Time: 0.268ms, Result: STRING EXISTS
+2025-02-24 17:58:46,267 - Query: 'def search_string_in_file(path: str, query: str) -> str:', IP: 127.0.0.1:39896, Execution Time: 0.232ms, Result: STRING NOT FOUND
+2025-02-24 17:58:46,267 - Query: '"""', IP: 127.0.0.1:39896, Execution Time: 0.249ms, Result: STRING NOT FOUND
+2025-02-24 17:59:49,021 - Unexpected error with client ('127.0.0.1', 39896): The read operation timed out
+2025-02-24 17:59:57,842 - 
+Server shutting down gracefully...
+2025-02-24 18:02:49,677 - 
+Server shutting down gracefully...
+2025-02-24 18:09:22,886 - New connection from ('127.0.0.1', 41212)
+2025-02-24 18:09:24,282 - Query: 'adsf', IP: 127.0.0.1:41212, Execution Time: 0.195ms, Result: STRING NOT FOUND
+2025-02-24 18:09:56,283 - Query: 'import os', IP: 127.0.0.1:41212, Execution Time: 0.214ms, Result: STRING NOT FOUND
+2025-02-24 18:09:56,283 - Query: 'import tempfile', IP: 127.0.0.1:41212, Execution Time: 0.162ms, Result: STRING NOT FOUND
+2025-02-24 18:09:58,923 - 
+Server shutting down gracefully...
+2025-02-24 18:10:05,984 - New connection from ('127.0.0.1', 54566)
+2025-02-24 18:10:07,792 - 
+Server shutting down gracefully...
+2025-02-24 18:10:30,011 - New connection from ('127.0.0.1', 52582)
+2025-02-24 18:10:31,785 - Query: 'asd', IP: 127.0.0.1:52582, Execution Time: 0.208ms, Result: STRING NOT FOUND
+2025-02-24 18:10:33,817 - Query: 'asdfasdf', IP: 127.0.0.1:52582, Execution Time: 0.173ms, Result: STRING NOT FOUND
+2025-02-24 18:10:35,766 - Query: 'asdfa', IP: 127.0.0.1:52582, Execution Time: 0.341ms, Result: STRING NOT FOUND
+2025-02-24 18:10:36,143 - Query: 'asdf', IP: 127.0.0.1:52582, Execution Time: 0.401ms, Result: STRING NOT FOUND
+2025-02-24 18:10:36,985 - Query: 'asdfasdfasdf', IP: 127.0.0.1:52582, Execution Time: 0.27ms, Result: STRING NOT FOUND
+2025-02-24 18:10:44,078 - Query: 'asfasdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff', IP: 127.0.0.1:52582, Execution Time: 0.325ms, Result: STRING NOT FOUND
+2025-02-24 18:11:45,932 - 
+Server shutting down gracefully...
+2025-02-24 18:11:49,796 - New connection from ('127.0.0.1', 53600)
+2025-02-24 18:11:51,731 - Query: 'sdf', IP: 127.0.0.1:53600, Execution Time: 0.349ms, Result: STRING NOT FOUND
+2025-02-24 18:12:08,651 - 
+Server shutting down gracefully...
+2025-02-24 18:12:11,678 - New connection from ('127.0.0.1', 34512)
+2025-02-24 18:12:13,103 - Query: 'ads', IP: 127.0.0.1:34512, Execution Time: 0.365ms, Result: STRING NOT FOUND
+2025-02-24 18:12:14,569 - Query: 'adsfasdf', IP: 127.0.0.1:34512, Execution Time: 0.295ms, Result: STRING NOT FOUND
+2025-02-24 18:12:15,973 - Query: 'asdfasdfasdfasdf', IP: 127.0.0.1:34512, Execution Time: 0.172ms, Result: STRING NOT FOUND
+2025-02-24 18:12:16,573 - Query: 'asdfasd', IP: 127.0.0.1:34512, Execution Time: 0.264ms, Result: STRING NOT FOUND
+2025-02-24 18:12:17,295 - Query: 'fasdfasdf', IP: 127.0.0.1:34512, Execution Time: 0.21ms, Result: STRING NOT FOUND
+2025-02-24 18:12:23,618 - Query: 'asdfasdf', IP: 127.0.0.1:34512, Execution Time: 0.477ms, Result: STRING NOT FOUND
+2025-02-24 18:12:26,193 - Query: 'asdfsd', IP: 127.0.0.1:34512, Execution Time: 0.429ms, Result: STRING NOT FOUND
+2025-02-24 18:12:29,513 - 
+Server shutting down gracefully...
+2025-02-24 18:15:20,486 - New connection from ('127.0.0.1', 58448)
+2025-02-24 18:15:20,487 - Query: 'test_string', IP: 127.0.0.1:58448, Execution Time: 0.181ms, Result: STRING NOT FOUND
+2025-02-24 18:15:21,543 - New connection from ('127.0.0.1', 58452)
+2025-02-24 18:15:21,543 - Query: 'test_string', IP: 127.0.0.1:58452, Execution Time: 0.218ms, Result: STRING NOT FOUND
+2025-02-24 18:15:22,593 - New connection from ('127.0.0.1', 58466)
+2025-02-24 18:15:22,594 - Query: 'test_string', IP: 127.0.0.1:58466, Execution Time: 0.254ms, Result: STRING NOT FOUND
+2025-02-24 18:15:23,652 - New connection from ('127.0.0.1', 40354)
+2025-02-24 18:15:23,653 - Query: 'test_string', IP: 127.0.0.1:40354, Execution Time: 0.235ms, Result: STRING NOT FOUND
+2025-02-24 18:15:24,701 - New connection from ('127.0.0.1', 40364)
+2025-02-24 18:15:24,701 - Query: 'test_string', IP: 127.0.0.1:40364, Execution Time: 0.241ms, Result: STRING NOT FOUND
+2025-02-24 18:15:25,751 - New connection from ('127.0.0.1', 40376)
+2025-02-24 18:15:26,801 - New connection from ('127.0.0.1', 40386)
+2025-02-24 18:15:27,852 - New connection from ('127.0.0.1', 40394)
+2025-02-24 18:15:39,712 - 
+Server shutting down gracefully...
+2025-02-24 18:31:48,824 - New connection from ('127.0.0.1', 40752)
+2025-02-24 18:31:48,825 - Query: 'test_string', IP: 127.0.0.1:40752, Execution Time: 0.202ms, Result: STRING NOT FOUND
+2025-02-24 18:31:49,876 - New connection from ('127.0.0.1', 40754)
+2025-02-24 18:31:49,877 - Query: 'test_string', IP: 127.0.0.1:40754, Execution Time: 0.131ms, Result: STRING NOT FOUND
+2025-02-24 18:31:50,929 - New connection from ('127.0.0.1', 39564)
+2025-02-24 18:31:50,929 - Query: 'test_string', IP: 127.0.0.1:39564, Execution Time: 0.148ms, Result: STRING NOT FOUND
+2025-02-24 18:31:51,987 - New connection from ('127.0.0.1', 39568)
+2025-02-24 18:31:51,987 - Query: 'test_string', IP: 127.0.0.1:39568, Execution Time: 0.18ms, Result: STRING NOT FOUND
+2025-02-24 18:31:53,035 - New connection from ('127.0.0.1', 39584)
+2025-02-24 18:31:53,035 - Query: 'test_string', IP: 127.0.0.1:39584, Execution Time: 0.16ms, Result: STRING NOT FOUND
+2025-02-24 18:31:54,095 - New connection from ('127.0.0.1', 39592)
+2025-02-24 18:31:56,641 - New connection from ('127.0.0.1', 39606)
+2025-02-24 18:31:57,692 - New connection from ('127.0.0.1', 39616)
+2025-02-24 18:31:58,891 - 
+Server shutting down gracefully...
+2025-02-24 19:04:00,794 - New connection from ('127.0.0.1', 46274)
+2025-02-24 19:04:00,794 - Query: 'test_string', IP: 127.0.0.1:46274, Execution Time: 0.141ms, Result: STRING NOT FOUND
+2025-02-24 19:04:01,843 - New connection from ('127.0.0.1', 46280)
+2025-02-24 19:04:01,843 - Query: 'test_string', IP: 127.0.0.1:46280, Execution Time: 0.161ms, Result: STRING NOT FOUND
+2025-02-24 19:04:02,895 - New connection from ('127.0.0.1', 46288)
+2025-02-24 19:04:02,895 - Query: 'test_string', IP: 127.0.0.1:46288, Execution Time: 0.219ms, Result: STRING NOT FOUND
+2025-02-24 19:04:03,941 - New connection from ('127.0.0.1', 46292)
+2025-02-24 19:04:03,942 - Query: 'test_string', IP: 127.0.0.1:46292, Execution Time: 0.149ms, Result: STRING NOT FOUND
+2025-02-24 19:04:05,002 - New connection from ('127.0.0.1', 46296)
+2025-02-24 19:04:05,002 - Query: 'test_string', IP: 127.0.0.1:46296, Execution Time: 0.216ms, Result: STRING NOT FOUND
+2025-02-24 19:04:06,051 - New connection from ('127.0.0.1', 46298)
+2025-02-24 19:04:07,111 - New connection from ('127.0.0.1', 46312)
+2025-02-24 19:04:08,161 - New connection from ('127.0.0.1', 46322)
+2025-02-24 19:06:22,546 - 
+Server shutting down gracefully...
+2025-02-24 19:07:48,208 - New connection from ('127.0.0.1', 42308)
+2025-02-24 19:07:48,208 - Query: 'test_string', IP: 127.0.0.1:42308, Execution Time: 0.175ms, Result: STRING NOT FOUND
+2025-02-24 19:07:49,266 - New connection from ('127.0.0.1', 42322)
+2025-02-24 19:07:49,266 - Query: 'test_string', IP: 127.0.0.1:42322, Execution Time: 0.196ms, Result: STRING NOT FOUND
+2025-02-24 19:07:50,317 - New connection from ('127.0.0.1', 42330)
+2025-02-24 19:07:50,317 - Query: 'test_string', IP: 127.0.0.1:42330, Execution Time: 0.173ms, Result: STRING NOT FOUND
+2025-02-24 19:07:51,368 - New connection from ('127.0.0.1', 42332)
+2025-02-24 19:07:51,369 - Query: 'test_string', IP: 127.0.0.1:42332, Execution Time: 0.287ms, Result: STRING NOT FOUND
+2025-02-24 19:07:52,424 - New connection from ('127.0.0.1', 33172)
+2025-02-24 19:07:52,424 - Query: 'test_string', IP: 127.0.0.1:33172, Execution Time: 0.257ms, Result: STRING NOT FOUND
+2025-02-24 19:07:53,473 - New connection from ('127.0.0.1', 33180)
+2025-02-24 19:07:54,523 - New connection from ('127.0.0.1', 33182)
+2025-02-24 19:07:55,576 - New connection from ('127.0.0.1', 33198)
+2025-02-24 19:08:03,004 - 
+Server shutting down gracefully...
+2025-02-24 19:10:48,705 - New connection from ('127.0.0.1', 39096)
+2025-02-24 19:10:48,706 - Query: 'test_string', IP: 127.0.0.1:39096, Execution Time: 0.142ms, Result: STRING NOT FOUND
+2025-02-24 19:10:49,764 - New connection from ('127.0.0.1', 39112)
+2025-02-24 19:10:49,765 - Query: 'test_string', IP: 127.0.0.1:39112, Execution Time: 0.199ms, Result: STRING NOT FOUND
+2025-02-24 19:10:50,813 - New connection from ('127.0.0.1', 39114)
+2025-02-24 19:10:50,813 - Query: 'test_string', IP: 127.0.0.1:39114, Execution Time: 0.234ms, Result: STRING NOT FOUND
+2025-02-24 19:10:51,864 - New connection from ('127.0.0.1', 39126)
+2025-02-24 19:10:51,865 - Query: 'test_string', IP: 127.0.0.1:39126, Execution Time: 0.255ms, Result: STRING NOT FOUND
+2025-02-24 19:10:52,910 - New connection from ('127.0.0.1', 46978)
+2025-02-24 19:10:52,910 - Query: 'test_string', IP: 127.0.0.1:46978, Execution Time: 0.159ms, Result: STRING NOT FOUND
+2025-02-24 19:10:53,961 - New connection from ('127.0.0.1', 46980)
+2025-02-24 19:10:55,010 - New connection from ('127.0.0.1', 46992)
+2025-02-24 19:10:56,061 - New connection from ('127.0.0.1', 47008)
+2025-02-24 19:11:38,767 - 
+Server shutting down gracefully...
+2025-02-24 19:11:45,676 - New connection from ('127.0.0.1', 38318)
+2025-02-24 19:11:45,677 - Query: 'test_string', IP: 127.0.0.1:38318, Execution Time: 0.157ms, Result: STRING NOT FOUND
+2025-02-24 19:11:46,728 - New connection from ('127.0.0.1', 38328)
+2025-02-24 19:11:46,728 - Query: 'test_string', IP: 127.0.0.1:38328, Execution Time: 0.226ms, Result: STRING NOT FOUND
+2025-02-24 19:11:47,778 - New connection from ('127.0.0.1', 55126)
+2025-02-24 19:11:47,778 - Query: 'test_string', IP: 127.0.0.1:55126, Execution Time: 0.154ms, Result: STRING NOT FOUND
+2025-02-24 19:11:48,831 - New connection from ('127.0.0.1', 55140)
+2025-02-24 19:11:48,832 - Query: 'test_string', IP: 127.0.0.1:55140, Execution Time: 0.21ms, Result: STRING NOT FOUND
+2025-02-24 19:11:49,889 - New connection from ('127.0.0.1', 55150)
+2025-02-24 19:11:49,889 - Query: 'test_string', IP: 127.0.0.1:55150, Execution Time: 0.277ms, Result: STRING NOT FOUND
+2025-02-24 19:11:50,940 - New connection from ('127.0.0.1', 55158)
+2025-02-24 19:11:51,996 - New connection from ('127.0.0.1', 55160)
+2025-02-24 19:11:53,049 - New connection from ('127.0.0.1', 55170)
+2025-02-24 19:17:00,070 - 
+Server shutting down gracefully...
+2025-02-24 19:17:56,802 - New connection from ('127.0.0.1', 57596)
+2025-02-24 19:17:56,810 - Query: 'test_string', IP: 127.0.0.1:57596, Execution Time: 7.677ms, Result: STRING NOT FOUND
+2025-02-24 19:17:57,855 - New connection from ('127.0.0.1', 57604)
+2025-02-24 19:17:57,861 - Query: 'test_string', IP: 127.0.0.1:57604, Execution Time: 6.077ms, Result: STRING NOT FOUND
+2025-02-24 19:17:58,905 - New connection from ('127.0.0.1', 57616)
+2025-02-24 19:17:58,911 - Query: 'test_string', IP: 127.0.0.1:57616, Execution Time: 6.44ms, Result: STRING NOT FOUND
+2025-02-24 19:17:59,955 - New connection from ('127.0.0.1', 57628)
+2025-02-24 19:17:59,961 - Query: 'test_string', IP: 127.0.0.1:57628, Execution Time: 6.171ms, Result: STRING NOT FOUND
+2025-02-24 19:18:01,005 - New connection from ('127.0.0.1', 42778)
+2025-02-24 19:18:01,011 - Query: 'test_string', IP: 127.0.0.1:42778, Execution Time: 5.855ms, Result: STRING NOT FOUND
+2025-02-24 19:18:02,054 - New connection from ('127.0.0.1', 42780)
+2025-02-24 19:18:03,107 - New connection from ('127.0.0.1', 42788)
+2025-02-24 19:18:04,157 - New connection from ('127.0.0.1', 42800)
+2025-02-24 19:20:30,568 - 
+Server shutting down gracefully...
+2025-02-24 19:22:06,617 - New connection from ('127.0.0.1', 47628)
+2025-02-24 19:22:06,623 - Query: 'test_string', IP: 127.0.0.1:47628, Execution Time: 6.022ms, Result: STRING NOT FOUND
+2025-02-24 19:22:07,666 - New connection from ('127.0.0.1', 47638)
+2025-02-24 19:22:07,672 - Query: 'test_string', IP: 127.0.0.1:47638, Execution Time: 6.286ms, Result: STRING NOT FOUND
+2025-02-24 19:22:08,716 - New connection from ('127.0.0.1', 47644)
+2025-02-24 19:22:08,723 - Query: 'test_string', IP: 127.0.0.1:47644, Execution Time: 6.121ms, Result: STRING NOT FOUND
+2025-02-24 19:22:09,766 - New connection from ('127.0.0.1', 47658)
+2025-02-24 19:22:09,772 - Query: 'test_string', IP: 127.0.0.1:47658, Execution Time: 6.112ms, Result: STRING NOT FOUND
+2025-02-24 19:22:10,817 - New connection from ('127.0.0.1', 47670)
+2025-02-24 19:22:10,823 - Query: 'test_string', IP: 127.0.0.1:47670, Execution Time: 5.964ms, Result: STRING NOT FOUND
+2025-02-24 19:22:50,546 - New connection from ('127.0.0.1', 48478)
+2025-02-24 19:22:50,554 - Query: 'test_string', IP: 127.0.0.1:48478, Execution Time: 7.582ms, Result: STRING NOT FOUND
+2025-02-24 19:22:51,603 - New connection from ('127.0.0.1', 48480)
+2025-02-24 19:22:51,610 - Query: 'test_string', IP: 127.0.0.1:48480, Execution Time: 6.534ms, Result: STRING NOT FOUND
+2025-02-24 19:22:52,652 - New connection from ('127.0.0.1', 48490)
+2025-02-24 19:22:52,659 - Query: 'test_string', IP: 127.0.0.1:48490, Execution Time: 6.381ms, Result: STRING NOT FOUND
+2025-02-24 19:22:53,702 - New connection from ('127.0.0.1', 58920)
+2025-02-24 19:22:53,708 - Query: 'test_string', IP: 127.0.0.1:58920, Execution Time: 6.182ms, Result: STRING NOT FOUND
+2025-02-24 19:22:54,752 - New connection from ('127.0.0.1', 58934)
+2025-02-24 19:22:54,759 - Query: 'test_string', IP: 127.0.0.1:58934, Execution Time: 6.305ms, Result: STRING NOT FOUND
+2025-02-24 19:22:55,802 - New connection from ('127.0.0.1', 58940)
+2025-02-24 19:22:56,853 - New connection from ('127.0.0.1', 58950)
+2025-02-24 19:22:57,904 - New connection from ('127.0.0.1', 58952)
+2025-02-24 19:25:39,413 - 
+Server shutting down gracefully...
+2025-02-24 19:26:17,207 - New connection from ('127.0.0.1', 43646)
+2025-02-24 19:26:19,012 - Query: 'asdf', IP: 127.0.0.1:43646, Execution Time: 7.126ms, Result: STRING NOT FOUND
+2025-02-24 19:26:19,674 - Query: 'asdf', IP: 127.0.0.1:43646, Execution Time: 6.242ms, Result: STRING NOT FOUND
+2025-02-24 19:26:20,268 - Query: 'asdf', IP: 127.0.0.1:43646, Execution Time: 6.268ms, Result: STRING NOT FOUND
+2025-02-24 19:26:20,454 - Query: 'asdf', IP: 127.0.0.1:43646, Execution Time: 7.754ms, Result: STRING NOT FOUND
+2025-02-24 19:26:20,656 - Query: 'asd', IP: 127.0.0.1:43646, Execution Time: 6.557ms, Result: STRING NOT FOUND
+2025-02-24 19:26:29,793 - Query: 'asd22;0;1;11;0;8;5;0;', IP: 127.0.0.1:43646, Execution Time: 4.635ms, Result: STRING NOT FOUND
+2025-02-24 19:26:36,137 - Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:43646, Execution Time: 0.203ms, Result: STRING EXISTS, LINE 89
+2025-02-24 19:26:39,871 - Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:43646, Execution Time: 0.384ms, Result: STRING EXISTS, LINE 89
+2025-02-24 19:26:41,384 - Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:43646, Execution Time: 0.326ms, Result: STRING EXISTS, LINE 89
+2025-02-24 19:26:42,248 - Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:43646, Execution Time: 0.308ms, Result: STRING EXISTS, LINE 89
+2025-02-24 19:26:42,584 - Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:43646, Execution Time: 0.302ms, Result: STRING EXISTS, LINE 89
+2025-02-24 19:26:47,581 - 
+Server shutting down gracefully...
+2025-02-24 19:30:54,969 - New connection from ('127.0.0.1', 45444)
+2025-02-24 19:30:58,850 - Query: '22;0;1;11;0;8;5;0;', IP: 127.0.0.1:45444, Execution Time: 0.274ms, Result: STRING EXISTS, LINE 89
+2025-02-24 19:31:32,722 - 
+Server shutting down gracefully...
+2025-02-24 19:45:54,868 - New connection from ('127.0.0.1', 32856)
+2025-02-24 19:45:54,875 - Query: 'test_string', IP: 127.0.0.1:32856, Execution Time: 6.882ms, Result: STRING NOT FOUND
+2025-02-24 19:45:55,936 - New connection from ('127.0.0.1', 32862)
+2025-02-24 19:45:55,943 - Query: 'test_string', IP: 127.0.0.1:32862, Execution Time: 6.61ms, Result: STRING NOT FOUND
+2025-02-24 19:45:57,005 - New connection from ('127.0.0.1', 32874)
+2025-02-24 19:45:57,011 - Query: 'test_string', IP: 127.0.0.1:32874, Execution Time: 6.581ms, Result: STRING NOT FOUND
+2025-02-24 19:45:58,053 - New connection from ('127.0.0.1', 32884)
+2025-02-24 19:45:58,060 - Query: 'test_string', IP: 127.0.0.1:32884, Execution Time: 6.654ms, Result: STRING NOT FOUND
+2025-02-24 19:45:59,104 - New connection from ('127.0.0.1', 32900)
+2025-02-24 19:45:59,111 - Query: 'test_string', IP: 127.0.0.1:32900, Execution Time: 6.532ms, Result: STRING NOT FOUND
+2025-02-24 19:46:00,153 - New connection from ('127.0.0.1', 32916)
+2025-02-24 19:46:01,202 - New connection from ('127.0.0.1', 46006)
+2025-02-24 19:46:02,253 - New connection from ('127.0.0.1', 46018)
+2025-02-24 19:46:09,666 - New connection from ('127.0.0.1', 46022)
+2025-02-24 19:46:09,673 - Query: 'test_string', IP: 127.0.0.1:46022, Execution Time: 7.091ms, Result: STRING NOT FOUND
+2025-02-24 19:46:10,757 - New connection from ('127.0.0.1', 33436)
+2025-02-24 19:46:10,765 - Query: 'test_string', IP: 127.0.0.1:33436, Execution Time: 7.216ms, Result: STRING NOT FOUND
+2025-02-24 19:46:13,626 - New connection from ('127.0.0.1', 33450)
+2025-02-24 19:46:13,633 - Query: 'test_string', IP: 127.0.0.1:33450, Execution Time: 6.719ms, Result: STRING NOT FOUND
+2025-02-24 19:46:14,764 - New connection from ('127.0.0.1', 33462)
+2025-02-24 19:46:14,772 - Query: 'test_string', IP: 127.0.0.1:33462, Execution Time: 7.686ms, Result: STRING NOT FOUND
+2025-02-24 19:46:15,818 - New connection from ('127.0.0.1', 33472)
+2025-02-24 19:46:15,825 - Query: 'test_string', IP: 127.0.0.1:33472, Execution Time: 6.661ms, Result: STRING NOT FOUND
+2025-02-24 19:46:16,896 - New connection from ('127.0.0.1', 33486)
+2025-02-24 19:46:17,950 - New connection from ('127.0.0.1', 33488)
+2025-02-24 19:46:19,008 - New connection from ('127.0.0.1', 33496)

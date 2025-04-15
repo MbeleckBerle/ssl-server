@@ -79,13 +79,13 @@ def test_run_client_no_ssl(mock_socket):
     fake_socket_instance.recv.side_effect = [b"Welcome", b"Response"]
 
     # Run the client with mocked input and print functions
-    with patch("builtins.input", side_effect=[
-        "test query", "exit"
-        ]), patch(
-            "builtins.print") as mock_print: run_client(
-            "127.0.0.1", 44445, config_path)
+    with patch("builtins.input", side_effect=["test query", "exit"]), \
+        patch("builtins.print") as mock_print:
+        run_client("127.0.0.1", 44445, config_path)
 
-    mock_print
+    # Ensure mock_print is used to prevent linting warnings
+    assert mock_print
+
     # Assert that the client attempted to connect
     fake_socket_instance.connect.assert_called_with(("127.0.0.1", 44445))
 
